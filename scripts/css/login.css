@@ -1,0 +1,68 @@
+@carset= "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400);
+body {
+  background-color:black;
+  -webkit-font-smoothing: antialiased;
+  font: normal 14px Roboto,arial,sans-serif;
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.loginContainer {
+	margin: auto;
+	padding-left: auto;
+	padding-right: auto;
+	max-width: 80%;
+	vertical-align: middle;
+    /*padding: 25px;
+    position: fixed;*/
+
+}
+
+@media (min-width: 992px)
+{
+    .col-md-3 
+	{
+		max-width: 90%;
+		min-width: 80%;
+		margin: auto;
+		float: none;
+	}
+}
+
+.form-login {
+    background-color: #EDEDED;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    border-color:#d2d2d2;
+    border-width: 5px;
+    box-shadow:0 1px 0 #cfcfcf;
+}
+
+h4 { 
+ border:0 solid #fff; 
+ border-bottom-width:1px;
+ padding-bottom:10px;
+ text-align: center;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+.wrapper {
+    text-align: center;
+}
