@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="3agleHost">
+  <component name="PublishConfigData" serverName="3agleHost" uploadOnCheckin="9d60a08f-5786-42bc-9690-937df7d7ed47">
     <serverData>
       <paths name="3agleHost">
         <serverdata>
@@ -16,5 +16,6 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myUploadOnCheckinName" value="3agleHost" />
   </component>
 </project>

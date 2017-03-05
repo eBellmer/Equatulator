@@ -17,9 +17,7 @@
 		<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 		<link rel="stylesheet" type="text/css" href="./scripts/css/style.css">
 		
-		<title>PHYS</title>
-		
-		
+		<title>Calculate</title>
 	</head>
 	<body>
 		<div class="container-fluid text-center">
