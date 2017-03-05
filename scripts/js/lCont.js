@@ -11,20 +11,7 @@ function calculate()
   var c = 299792458;
   var L0 = document.getElementById("aLength").value;
   var v = document.getElementById("rVelocity").value;
-  
-  /*document.getElementById("result").innerHTML = L0;
-  if (L0 == "aLength" && v == "rVelocity")
-    {
-      document.getElementById("testing").innerHTML = "Invalid Input! v L0";
-    }
-  else if (isempty(L0))
-    {
-      document.getElementById("testing").innerHTML = "Invalid Input! L0";
-    }
-  else if (isempty(v))
-    {
-      document.getElementById("testing").innerHTML = "Invalid Input! v";
-    }*/
+
   
   L0 = parseFloat(L0);
   v = parseFloat(v);
