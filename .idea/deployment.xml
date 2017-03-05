@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Calc3agleHost" uploadOnCheckin="97f7e94f-b792-49bc-bd74-986b9fce018e">
+  <component name="PublishConfigData" serverName="3agleHost">
     <serverData>
-      <paths name="Calc3agleHost">
+      <paths name="3agleHost">
         <serverdata>
           <mappings>
             <mapping deploy="\" local="$PROJECT_DIR$" web="/" />
@@ -15,14 +15,6 @@
           </excludedPaths>
         </serverdata>
       </paths>
-      <paths name="web.3aglehost.uk">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
     </serverData>
-    <option name="myUploadOnCheckinName" value="Calc3agleHost" />
   </component>
 </project>
