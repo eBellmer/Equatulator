@@ -22,9 +22,10 @@
 		
 	</head>
 	<body>
-		<?php //require_once('./scripts/php/nav_sub0.php');?>
 		<div class="container-fluid text-center">
-			<h1> Coming Soon </h1>
+            <h1>Calculate</h1>
+            <h2>Coming Soon</h2>
+            <p>The BootStrap/JS Calculator</p>
 		</div>
 	</body>
 </html>
