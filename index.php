@@ -24,8 +24,8 @@
 	<body>
 		<div class="container-fluid text-center">
             <h1>Calculate</h1>
-            <h2>Coming Soon</h2>
-            <p>The BootStrap/JS Calculator</p>
+            <h2>The BootStrap/JS Calculator</h2>
+            <p>Coming Soon</p>
 		</div>
 	</body>
 </html>
