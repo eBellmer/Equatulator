@@ -17,15 +17,13 @@
 		<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 		<link rel="stylesheet" type="text/css" href="./scripts/css/style.css">
 		
-		<title>PHYS</title>
-		
-		
+		<title>Calculate</title>
 	</head>
 	<body>
 		<div class="container-fluid text-center">
             <h1>Calculate</h1>
-            <h2>Coming Soon</h2>
-            <p>The BootStrap/JS Calculator</p>
+            <h2>The BootStrap/JS Calculator</h2>
+            <p>Coming Soon</p>
 		</div>
 	</body>
 </html>

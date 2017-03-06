@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="3agleHost" uploadOnCheckin="9d60a08f-5786-42bc-9690-937df7d7ed47">
+    <serverData>
+      <paths name="3agleHost">
+        <serverdata>
+          <mappings>
+            <mapping deploy="\" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="aspnet_client" />
+            <excludedPath path="SecureLogin" />
+            <excludedPath local="true" path="$PROJECT_DIR$/aspnet_client" />
+            <excludedPath local="true" path="$PROJECT_DIR$/SecureLogin" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myUploadOnCheckinName" value="3agleHost" />
+  </component>
+</project>
