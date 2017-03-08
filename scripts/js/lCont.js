@@ -25,7 +25,7 @@ function calculate()
     vc = math.sqrt(vc);
     var L = math.multiply(L0, vc);
 
-    document.getElementById("result").innerHTML = L + "" + units;   
+    document.getElementById("result").innerHTML = "Adjusted Length: " +  L + "" + units;
   }
   else if(L0 <= 0)
   {

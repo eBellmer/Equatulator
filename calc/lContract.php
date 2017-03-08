@@ -24,7 +24,6 @@ define("ROOT_DIR", "./../")
 	</head>
 	<body>
 		<?php require_once(ROOT_DIR . 'scripts/php/nav.php');?>
-		
 		<div class="outer">
 			<div class="middle">
 				<div class="inner-1">
@@ -40,7 +39,7 @@ define("ROOT_DIR", "./../")
 								$$ L = {1\over L_0 \sqrt{1-v^2 c^2}} $$
 							</div>
 						</div>
-						<div class="row">
+						<div class="row row-inputs">
 							<form id="lCont">
 								<div class="col-md-2">
 								</div>
@@ -54,7 +53,7 @@ define("ROOT_DIR", "./../")
 								</div>
 							</form>
 						</div>
-						<div class="row">
+						<div class="row row-btn">
 							<div class="col-md-12">
 								<button type="button" class="btn btn-default" onclick="calculate()">Calculate</button>
 							</div>
@@ -62,8 +61,7 @@ define("ROOT_DIR", "./../")
 						<div class="row">
 							<div class="col-md-12">
                 <p id="error-msg"></p>
-								<h3>RESULT HERE</h3>
-								<p id="result"></p>
+								<h3 id="result"></h3>
 							</div>
 						</div>
 						<div class="row">
