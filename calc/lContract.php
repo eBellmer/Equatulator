@@ -61,15 +61,16 @@ define("ROOT_DIR", "./../")
 						</div>
 						<div class="row">
 							<div class="col-md-12">
+                <p id="error-msg"></p>
 								<h3>RESULT HERE</h3>
 								<p id="result"></p>
-								<p id="testing"></p>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-12">
 								<h3>Description:</h3>
-								<p>Length contraction is the phenomenon of a decrease in length of an object as measured by an observer who is traveling at any non-zero velocity relative to the object. 
+								<p>
+                  Length contraction is the phenomenon of a decrease in length of an object as measured by an observer who is traveling at any non-zero velocity relative to the object.
 									This contraction (more formally called Lorentz contraction or Lorentz–FitzGerald contraction after Hendrik Lorentz and George Francis FitzGerald) is usually only 
 									noticeable at a substantial fraction of the speed of light.</br>
 									Length contraction is only in the direction parallel to the direction in which the observed body is travelling.</br>
