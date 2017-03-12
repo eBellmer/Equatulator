@@ -19,10 +19,10 @@
 					<ul class="dropdown-menu" role="menu">
 						<li class="dropdown-header">Ready to calculate?</li>
 						<li><a href="<?php echo ROOT_DIR;?>calc/equations.php">Equation List</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li><a href="#">Separated link</a></li>
-						<li><a href="#">One more separated link</a></li>
+						<li><a href="<?php echo ROOT_DIR;?>calc/lContract.php">Lorentz Contraction</a></li>
+						<li><a href="<?php echo ROOT_DIR;?>calc/RelVelTD.php">Relative Velocity Time Dilation</a></li>
+						<li><a href="#">The Next One</a></li>
+						<li><a href="#">The One After</a></li>
 					</ul>
 				</li>
 				<li class="dropdown">
