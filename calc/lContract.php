@@ -24,7 +24,6 @@ define("ROOT_DIR", "./../")
 	</head>
 	<body>
 		<?php require_once(ROOT_DIR . 'scripts/php/nav.php');?>
-		
 		<div class="outer">
 			<div class="middle">
 				<div class="inner-1">
@@ -40,7 +39,7 @@ define("ROOT_DIR", "./../")
 								$$ L = {1\over L_0 \sqrt{1-v^2 c^2}} $$
 							</div>
 						</div>
-						<div class="row">
+						<div class="row row-inputs">
 							<form id="lCont">
 								<div class="col-md-2">
 								</div>
@@ -54,22 +53,22 @@ define("ROOT_DIR", "./../")
 								</div>
 							</form>
 						</div>
-						<div class="row">
+						<div class="row row-btn">
 							<div class="col-md-12">
 								<button type="button" class="btn btn-default" onclick="calculate()">Calculate</button>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-12">
-								<h3>RESULT HERE</h3>
-								<p id="result"></p>
-								<p id="testing"></p>
+                <p id="error-msg"></p>
+								<h3 id="result"></h3>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-12">
 								<h3>Description:</h3>
-								<p>Length contraction is the phenomenon of a decrease in length of an object as measured by an observer who is traveling at any non-zero velocity relative to the object. 
+								<p>
+                  Length contraction is the phenomenon of a decrease in length of an object as measured by an observer who is traveling at any non-zero velocity relative to the object.
 									This contraction (more formally called Lorentz contraction or Lorentz–FitzGerald contraction after Hendrik Lorentz and George Francis FitzGerald) is usually only 
 									noticeable at a substantial fraction of the speed of light.</br>
 									Length contraction is only in the direction parallel to the direction in which the observed body is travelling.</br>
