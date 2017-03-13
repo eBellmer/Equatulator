@@ -21,8 +21,6 @@
 						<li><a href="<?php echo ROOT_DIR;?>calc/equations.php">Equation List</a></li>
 						<li><a href="<?php echo ROOT_DIR;?>calc/lContract.php">Lorentz Contraction</a></li>
 						<li><a href="<?php echo ROOT_DIR;?>calc/RelVelTD.php">Relative Velocity Time Dilation</a></li>
-						<li><a href="#">The Next One</a></li>
-						<li><a href="#">The One After</a></li>
 					</ul>
 				</li>
 				<li class="dropdown">
