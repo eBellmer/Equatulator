@@ -21,9 +21,9 @@
 	</head>
 	<body>
 		<div class="container-fluid text-center">
-            <h1>Calculate</h1>
-            <h2>The BootStrap/JS Calculator</h2>
-            <p>Coming Soon</p>
+      <h1>Calculate</h1>
+      <h2>The BootStrap/JS Calculator</h2>
+      <p>Coming Soon: Very Soon... Hopefully</p>
 		</div>
 	</body>
 </html>
