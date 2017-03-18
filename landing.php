@@ -13,7 +13,7 @@ define("ROOT_DIR", "./")
 		<?php require_once(ROOT_DIR . 'scripts/php/BSCSS.php');?>
 		<link rel="stylesheet" href="<?php echo ROOT_DIR;?>scripts/css/style.css">
 
-		<title>Landing</title>
+		<title>Equatulate</title>
 	</head>
 	<body>
 		<?php require_once(ROOT_DIR . 'scripts/php/nav.php');?>
@@ -24,12 +24,12 @@ define("ROOT_DIR", "./")
 					<div class="container-fluid">
 						<div class="row row-heading">
 							<div class="col-md-12">
-								<h2>Calculate</h2>
+								<h2>The Equatulator</h2>
 							</div>
 						</div>
 						<div class="row row-subtitle">
 							<div class="col-md-12">
-								<p>The Bootstrap/JS Calculator</p>
+								<p>The Bootstrap/JS Equation Calculator</p>
 							</div>
 						</div>
 						<div class="row">

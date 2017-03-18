@@ -17,12 +17,12 @@
 		<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 		<link rel="stylesheet" type="text/css" href="./scripts/css/style.css">
 		
-		<title>Calculate</title>
+		<title>Equatulate</title>
 	</head>
 	<body>
 		<div class="container-fluid text-center">
-      <h1>Calculate</h1>
-      <h2>The BootStrap/JS Calculator</h2>
+      <h1>The Equatulator</h1>
+      <h2>The BootStrap/JS Equation Calculator</h2>
       <p>Coming Soon: Very Soon... Hopefully</p>
 		</div>
 	</body>
