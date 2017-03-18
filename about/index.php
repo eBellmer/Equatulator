@@ -25,6 +25,7 @@ define("ROOT_DIR", "./../")
 							<div class="col-md-3"></div>
 							<div class="col-md-3">
 								<h4>Special Thanks:</h4>
+                                <p>Taylor for the inspiration behind the name.</p>
 							</div>
 							<div class="col-md-3"></div>
 							<div class="col-md-3"></div>
