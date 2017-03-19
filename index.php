@@ -21,7 +21,7 @@
 	</head>
 	<body>
 		<div class="container-fluid text-center">
-      <h1>The Equatulator</h1>
+      <h1>Equatulator.me</h1>
       <h2>The BootStrap/JS Equation Calculator</h2>
       <p>Coming Soon: Very Soon... Hopefully</p>
 		</div>

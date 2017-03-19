@@ -24,7 +24,7 @@ define("ROOT_DIR", "./")
 					<div class="container-fluid">
 						<div class="row row-heading">
 							<div class="col-md-12">
-								<h2>The Equatulator</h2>
+								<h2>Equatulator.me</h2>
 							</div>
 						</div>
 						<div class="row row-subtitle">
