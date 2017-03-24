@@ -23,6 +23,7 @@ define("ROOT_DIR", "./../")
 		<title>Relative Velocity Time Dilation</title>
 	</head>
 	<body>
+        <?php include_once(ROOT_DIR . "scripts/php/analyticstracking.php") ?>
 		<?php require_once(ROOT_DIR . 'scripts/php/nav.php');?>
 		
 		<div class="outer">

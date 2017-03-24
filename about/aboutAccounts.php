@@ -16,6 +16,7 @@ define("ROOT_DIR", "./../")
 		<title>About Accounts</title>
   </head>
   <body>
-		<?php require_once(ROOT_DIR . 'scripts/php/nav.php');?>
+        <?php include_once(ROOT_DIR . "scripts/php/analyticstracking.php") ?>
+        <?php require_once(ROOT_DIR . 'scripts/php/nav.php');?>
   </body>
 </html>
