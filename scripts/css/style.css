@@ -4,7 +4,8 @@
 body 
 {
 	background-color: #262626;
-	background-image: url("https://i.imgur.com/MqbVQw4.png");
+	/* background-image: url("https://i.imgur.com/MqbVQw4.png"); */
+	background-image: url("https://equatulator.me/media/atomMaster.svg");
 	background-size: 50%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -42,6 +43,11 @@ body
 	margin-top: 0;
 	margin-bottom: 0;
 	font-size: 200%
+}
+.row-subheading
+{
+	margin-top: 0;
+	margin-bottom: 0;
 }
 .row-btn
 {
@@ -151,6 +157,10 @@ body
 	vertical-align: middle;
 }
 
+.aboutText
+{
+	text-align: left;
+}
 /*
 .mjx-math
 {
