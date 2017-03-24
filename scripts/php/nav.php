@@ -4,7 +4,7 @@
 		<!-- Sidebar -->
 		<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
 			<ul class="nav sidebar-nav">
-				<li class="sidebar-brand"><a href="#">Calculate</a></li>
+				<li class="sidebar-brand"><a href="#">equatulator.me</a></li>
 				<li><a href="<?php echo ROOT_DIR;?>index.php">Home</a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<span class="caret"></span></a>
