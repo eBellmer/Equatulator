@@ -37,7 +37,7 @@
 						<div class="row row-equation">	
 							<div class="col-md-12">
 								<!-- Lorentz Contraction TeX//-->
-								$$ L = {L_0 \sqrt{1-v^2 c^2}} $$
+								$$ L = {L_0 \sqrt{1- {v^2 \over c^2}}} $$
 							</div>
 						</div>
 						<div class="row row-inputs">
