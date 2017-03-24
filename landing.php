@@ -40,7 +40,7 @@ define("ROOT_DIR", "./")
 								<a href="<?php echo ROOT_DIR;?>SecureLogin/login.php"><h3>Login</h3></a>
 							</div>
 							<div class="col-md-4">
-								<a href="<?php echo ROOT_DIR;?>about/index.php"><h3>About</h3></a>
+								<a href="<?php echo ROOT_DIR;?>about/"><h3>About</h3></a>
 							</div>
 						</div>
 					</div>

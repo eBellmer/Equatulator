@@ -27,13 +27,12 @@
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">About<span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
 						<li class="dropdown-header">Would you like to know more?</li>
-						<li><a href="<?php echo ROOT_DIR;?>about/index.php">About</a></li>
+						<li><a href="<?php echo ROOT_DIR;?>about/">About</a></li>
 						<li><a href="<?php echo ROOT_DIR;?>about/aboutAccounts.php">About Accounts</a></li>
 						<li><a href="<?php echo ROOT_DIR;?>about/aboutSecurity.php">About Security</a></li>
 						<li><a href="<?php echo ROOT_DIR;?>about/faq.php">FAQ</a></li>
 					</ul>
 				</li>
-				<!-- <li><a href="#">Contact</a></li> //-->
 			</ul>
 		</nav>
 		<!-- /#sidebar-wrapper -->
