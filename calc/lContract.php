@@ -1,6 +1,6 @@
 <?php 
-    session_start();
-    define("ROOT_DIR", "./../")
+session_start();
+define("ROOT_DIR", "./../")
 ?>
 
 <!DOCTYPE html>
