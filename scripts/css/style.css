@@ -168,6 +168,16 @@ body
 }
 */
 
+.panel, .panel-heading, .panel-footer
+{
+	background-color: inherit;
+}
+
+.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body
+{
+	border-top: none;
+}
+
 a:link    {color:white; background-color:transparent; text-decoration:none}
 a:visited {color:white; background-color:transparent; text-decoration:none}
 a:hover   {color:grey; background-color:transparent; text-decoration:none}
