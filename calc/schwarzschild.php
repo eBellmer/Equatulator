@@ -40,7 +40,7 @@ define("ROOT_DIR", "./../")
           <div class="container-fluid">
             <div class="row row-heading">
               <div class="col-md-12">
-                  <h2>Schwarzschild Radius</h2>
+                <h2>Schwarzschild Radius</h2>
               </div>
             </div>
             <div class="row row-equation">
@@ -50,7 +50,7 @@ define("ROOT_DIR", "./../")
               </div>
             </div>
             <div class="row row-inputs">
-              <form id="lCont">
+              <form id="schRadius">
                 <div class="col-md-2">
                 </div>
                 <div class="col-md-4">
@@ -63,22 +63,36 @@ define("ROOT_DIR", "./../")
                 </div>
               </form>
             </div>
-            <div class="row row-btn">
-              <div class="col-md-12">
-                <button type="button" class="btn btn-default" onclick="calculate()">Calculate</button>
-              </div>
+          </div>
+          <div class="row row-btn">
+            <div class="col-md-12">
+              <button type="button" class="btn btn-default" onclick="calculate()">Calculate</button>
             </div>
-            <div class="row">
-              <div class="col-md-12">
-                <p id="error-msg"></p>
-                <h3 id="result"></h3>
-              </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <p id="error-msg"></p>
+              <h3 id="result"></h3>
             </div>
-            <div class="row">
-              <div class="col-md-12">
-                <h3>Description:</h3>
-                <p>
-                </p>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="panel-group">
+                <div class="panel">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <h3><a data-toggle="collapse" href="#collapse1">Description :></a></h3>
+                    </h4>
+                  </div>
+                  <div id="collapse1" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p>
+                        Schwibble
+                      </p>
+                    </div>
+                    <div class="panel-footer">Panel Footer</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
