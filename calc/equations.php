@@ -51,7 +51,11 @@ define("ROOT_DIR", "./../")
 								</a>
 							</div>
 							<div class="col-md-2">
-								<a href="#">Yes</a>
+								<a href="./schwRad.php">
+									Schwarzschild Radius </br>
+									<!-- Schwarzschild Radius TeX//-->
+									$$ r_s = {2GM \over c^2} $$
+								</a>
 							</div>
 							<div class="col-md-2">
 								<a href="#">No</a>

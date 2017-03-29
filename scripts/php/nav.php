@@ -18,9 +18,10 @@
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Equations<span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
 						<li class="dropdown-header">Ready to calculate?</li>
-						<li><a href="?php echo ROOT_DIR;?>calc/equations.php">Equation List</a></li>
-						<li><a class="nav" href="<?php echo ROOT_DIR;?>calc/lContract.php">Lorentz Contraction</a></li>
+						<li><a href="<?php echo ROOT_DIR;?>calc/equations.php">Equation List</a></li>
+						<li><a href="<?php echo ROOT_DIR;?>calc/lContract.php">Lorentz Contraction</a></li>
 						<li><a href="<?php echo ROOT_DIR;?>calc/RelVelTD.php">Relative Velocity Time Dilation</a></li>
+						<li><a href="<?php echo ROOT_DIR;?>calc/schwRad.php">Schwarzschild Radius</a></li>
 					</ul>
 				</li>
 				<li class="dropdown">
