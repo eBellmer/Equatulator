@@ -4,7 +4,6 @@
 body 
 {
 	background-color: #262626;
-	/* background-image: url("https://i.imgur.com/MqbVQw4.png"); */
 	background-image: url("https://equatulator.me/media/atomMaster.svg");
 	background-size: 50%;
 	background-repeat: no-repeat;
@@ -30,11 +29,11 @@ body
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
-.row-heading
+.row-heading, .row-options
 {
 	margin-bottom: 0;
 }
-.row-subtitle
+.row-subtitle, .row-description
 {
 	margin-top: 0;
 }
@@ -44,15 +43,17 @@ body
 	margin-bottom: 0;
 	font-size: 200%
 }
-.row-subheading
+
+.row-output
 {
 	margin-top: 0;
 	margin-bottom: 0;
 }
-.row-btn
+
+.row-subheading
 {
-	/* argin-top: 10px;
-	margin-bottom: 0; */
+	margin-top: 0;
+	margin-bottom: 0;
 }
 .row-inputs
 {
@@ -67,7 +68,6 @@ body
 {
 	display:inline;
     max-width: 100%;
-    max-height: auto;
 }
 /* sm */
 @media (min-width: 768px) 
@@ -96,8 +96,6 @@ body
         max-width: 40%;
     }
 }
-
-
 /* IMG CSS END*/
 
 @keyframes fadein 
@@ -105,35 +103,30 @@ body
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
 /* Firefox < 16 */
 @-moz-keyframes fadein 
 {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein 
 {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
 /* Internet Explorer */
 @-ms-keyframes fadein 
 {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
 /* Opera < 12.1 */
 @-o-keyframes fadein 
 {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
 .outer 
 {
     display: table;
@@ -141,13 +134,11 @@ body
     height: 90%;
     width: 100%;
 }
-
 .middle 
 {
     display: table-cell;
     vertical-align: middle;
 }
-
 .inner-1 
 {
 	margin: auto;
@@ -156,28 +147,45 @@ body
 	max-width: 800px;
 	vertical-align: middle;
 }
-
 .aboutText
 {
 	text-align: left;
 }
-/*
-.mjx-math
-{
-	font-size: 200%
-}
-*/
-
 .panel, .panel-heading, .panel-footer
 {
 	background-color: inherit;
+	border: none;
+	border-radius: inherit;
+	padding: 0px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
-
 .panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body
 {
-	border-top: none;
-}
+	border: none;
+	border-radius: inherit;
+	padding: 0px;
 
+}
+.modal-content, .modal, .modal-body, .modal-header
+{
+	border: none;
+}
+.modal-content
+{
+    background-color: #262626;
+}
+.modal-header
+{
+	border-bottom: 1px solid #444444;
+}
+.modal-footer
+{
+	text-align: center;
+	padding: 5px;
+	border-top: 1px solid #444444;
+}
+a{color: inherit}
 a:link    {color:white; background-color:transparent; text-decoration:none}
 a:visited {color:white; background-color:transparent; text-decoration:none}
 a:hover   {color:grey; background-color:transparent; text-decoration:none}
