@@ -16,7 +16,7 @@ function calculate()
   L0 = parseFloat(L0);
   v = parseFloat(v);
   
-  if (L0 != "NaN" && L0 > 0 && v != "NaN" && v >= 0 && v <= c)
+  if (L0 !== "NaN" && L0 > 0 && v !== "NaN" && v >= 0 && v <= c)
   {
     v = math.pow(v, 2.0);
     c = math.pow(c, 2.0);
