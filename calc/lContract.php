@@ -65,18 +65,60 @@ define("ROOT_DIR", "./../")
 								<h3 id="result"></h3>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<h3>Description:</h3>
-								<p>
-                  Length contraction is the phenomenon of a decrease in length of an object as measured by an observer who is traveling at any non-zero velocity relative to the object.
-									This contraction (more formally called Lorentz contraction or Lorentz–FitzGerald contraction after Hendrik Lorentz and George Francis FitzGerald) is usually only 
-									noticeable at a substantial fraction of the speed of light.</br>
-									Length contraction is only in the direction parallel to the direction in which the observed body is travelling.</br>
-									For standard objects, this effect is negligible at everyday speeds, and can be ignored for all regular purposes. Only at greater speeds, or for electron motion, does it become significant.</br>
-									At a speed of 13,400,000 m/s (30 million mph, 0.0447c) contracted length is 99.9% of the length at rest; at a speed of 42,300,000 m/s (95 million mph, 0.141c), the length is still 99%. 
-									As the magnitude of the velocity approaches the speed of light, the effect becomes dominant.
-								</p>
+						<div class="row row-options">
+							<div class="col-md-3"></div>
+							<div class="col-md-3">
+								<div class="panel-group">
+									<div class="panel">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<h3><a data-toggle="collapse" href="#description">Description</a></h3>
+											</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<!-- Trigger the modal with a button -->
+								<h3><a data-toggle="modal" data-target="#options">Options</a></h3>
+								<!-- Modal -->
+								<div id="options" class="modal fade" role="dialog">
+									<div class="modal-dialog modal-sm">
+										<!-- Modal content-->
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close btn-link" data-dismiss="modal">&times;</button>
+												<h4 class="modal-title">Options</h4>
+											</div>
+											<div class="modal-body">
+												<p>
+													Some options here.<br>
+													Yes <br>
+													No <br>
+												</p>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-link btn-options" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3"></div>
+						</div>
+						<div class="row row-description">
+							<div id="description" class="panel-collapse collapse">
+								<div class="panel-body">
+									<p>
+										Length contraction is the phenomenon of a decrease in length of an object as measured by an observer who is traveling at any non-zero velocity relative to the object.
+										This contraction (more formally called Lorentz contraction or Lorentz–FitzGerald contraction after Hendrik Lorentz and George Francis FitzGerald) is usually only
+										noticeable at a substantial fraction of the speed of light.</br>
+										Length contraction is only in the direction parallel to the direction in which the observed body is travelling.</br>
+										For standard objects, this effect is negligible at everyday speeds, and can be ignored for all regular purposes. Only at greater speeds, or for electron motion, does it become significant.</br>
+										At a speed of 13,400,000 m/s (30 million mph, 0.0447c) contracted length is 99.9% of the length at rest; at a speed of 42,300,000 m/s (95 million mph, 0.141c), the length is still 99%.
+										As the magnitude of the velocity approaches the speed of light, the effect becomes dominant.
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
