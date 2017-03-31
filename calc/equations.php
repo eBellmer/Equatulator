@@ -17,7 +17,7 @@ define("ROOT_DIR", "./../")
 		<title>Equations</title>
   </head>
   <body>
-        <?php include_once(ROOT_DIR . "scripts/php/analyticstracking.php") ?>
+    <?php include_once(ROOT_DIR . "scripts/php/analyticstracking.php") ?>
 		<?php require_once(ROOT_DIR . 'scripts/php/nav.php');?>
 		
 		<div class="outer">
@@ -30,9 +30,10 @@ define("ROOT_DIR", "./../")
 							</div>
 						</div>
 						</div>
+						<!-- Special Relativity Equations//-->
 						<div class="row">
-							<div class="col-md-2">
-								<h3>Relativity:</h3>
+							<div class="col-md-4">
+								<h3>Special Relativity:</h3>
 							</div>
 						</div>
 						<div class="row">	
@@ -58,7 +59,60 @@ define("ROOT_DIR", "./../")
 								</a>
 							</div>
 							<div class="col-md-2">
-								<a href="#">No</a>
+								<a href="#">
+									Mass-Energy
+									<!-- Mass-Energy TeX//-->
+									$$ E_0 = m_0 c^2 $$
+									$$ E = {E_0 \over \sqrt{1 - {v^2 \over c^2}}} $$
+								</a>
+							</div>
+							<div class="col-md-2">
+								<a href="#">
+									Composition of Velocities
+									<!-- Composition of Velocities TeX//-->
+									$$ v = {v_1 + v_2 \over 1 + {v_1 + v_2 \over c^2}} $$
+								</a>
+							</div>
+							<div class="col-md-2">
+								<a href="#">I don't know</a>
+							</div>
+						</div>
+						<!-- End of Special Relativity Equations //-->
+
+						<!-- Electrical Engineering Equations //-->
+						<div class="row">
+							<div class="col-md-4">
+								<h3>Electronics:</h3>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-2">
+								<a href="#">
+									Ohm's Law </br>
+									<!-- Ohm's Law TeX//-->
+									$$ V = {I \over R} $$
+								</a>
+							</div>
+							<div class="col-md-2">
+								<a href="#">
+									Resistance in Series and Parallel </br>
+									<!-- Resistance in Series TeX//-->
+									$$ R_s = R_1 + R_2 $$
+									<!-- Resistance in Parallel TeX//-->
+									$$ R_p = {R_1 R_2 \over R_1 + R_2} $$
+								</a>
+							</div>
+							<div class="col-md-2">
+								<a href="#">
+									Capacitance in Series and Parallel </br>
+									<!-- Capacitance in Series TeX//-->
+									$$ C_s = {C_1 C_2 \over C_1 + C_2} $$
+									<!-- Capacitance in Parallel TeX//-->
+									$$ C_p = C_1 + C_2 $$
+								</a>
+							</div>
+							<div class="col-md-2">
+								<a href="#">Capacitance of a Capacitor</a>
 							</div>
 							<div class="col-md-2">
 								<a href="#">Maybe</a>
@@ -67,11 +121,7 @@ define("ROOT_DIR", "./../")
 								<a href="#">I don't know</a>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-md-12">
-								Can you repeat the question?
-							</div>
-						</div>
+						<!-- End of Electrical Engineering Equations //-->
 					</div>
 				</div>
 			</div>
