@@ -13,8 +13,10 @@ define("ROOT_DIR", "./")
 		<?php require_once(ROOT_DIR . 'scripts/php/BSCSS.php');?>
 		<?php require_once(ROOT_DIR . 'scripts/php/mathJax.php');?>
 		<link rel="stylesheet" href="<?php echo ROOT_DIR;?>scripts/css/style.css">
+		<!-- <link rel="apple-touch-icon" href="youricon" sizes="57x57"" />
+		<link name="msapplication-square150x150logo" content="yourimage" /> //-->
 
-		<title>Equatulate</title>
+		<title>Equatulator</title>
 	</head>
 	<body data-spy="scroll" data-offset="50">
     <?php include_once(ROOT_DIR . "scripts/php/analyticstracking.php") ?>
@@ -65,21 +67,21 @@ define("ROOT_DIR", "./")
 						<div class="row">
 							<div class="col-md-2">
 								<a href="./calc/lContract.php">
-									Lorrentz Contraction </br>
+									Lorrentz Contraction <br>
 									<!-- Lorentz Contraction TeX//-->
 									$$ L = {1\over L_0 \sqrt{1-v^2 c^2}} $$
 								</a>
 							</div>
 							<div class="col-md-2">
 								<a href="./calc/RelVelTD.php">
-									Relative Velocity Time Dilation </br>
+									Relative Velocity Time Dilation <br>
 									<!-- Time Dilation RelVel TeX//-->
 									$$ \Delta t' = {\Delta t \over \sqrt{1 - {v^2 \over c^2}}} $$
 								</a>
 							</div>
 							<div class="col-md-2">
 								<a href="./calc/schwRad.php">
-									Schwarzschild Radius </br>
+									Schwarzschild Radius <br>
 									<!-- Schwarzschild Radius TeX//-->
 									$$ r_s = {2GM \over c^2} $$
 								</a>
@@ -114,14 +116,14 @@ define("ROOT_DIR", "./")
 						<div class="row">
 							<div class="col-md-2">
 								<a href="#">
-									Ohm's Law </br>
+									Ohm's Law <br>
 									<!-- Ohm's Law TeX//-->
 									$$ V = {I \over R} $$
 								</a>
 							</div>
 							<div class="col-md-2">
 								<a href="#">
-									Resistance in Series and Parallel </br>
+									Resistance in Series and Parallel <br>
 									<!-- Resistance in Series TeX//-->
 									$$ R_s = R_1 + R_2 $$
 									<!-- Resistance in Parallel TeX//-->
@@ -130,7 +132,7 @@ define("ROOT_DIR", "./")
 							</div>
 							<div class="col-md-2">
 								<a href="#">
-									Capacitance in Series and Parallel </br>
+									Capacitance in Series and Parallel <br>
 									<!-- Capacitance in Series TeX//-->
 									$$ C_s = {C_1 C_2 \over C_1 + C_2} $$
 									<!-- Capacitance in Parallel TeX//-->
@@ -158,14 +160,14 @@ define("ROOT_DIR", "./")
 						<div class="row">
 							<div class="col-md-2">
 								<a href="#">
-									Ohm's Law </br>
+									Ohm's Law <br>
 									<!-- Ohm's Law TeX//-->
 									$$ V = {I \over R} $$
 								</a>
 							</div>
 							<div class="col-md-2">
 								<a href="#">
-									Resistance in Series and Parallel </br>
+									Resistance in Series and Parallel <br>
 									<!-- Resistance in Series TeX//-->
 									$$ R_s = R_1 + R_2 $$
 									<!-- Resistance in Parallel TeX//-->
@@ -174,7 +176,7 @@ define("ROOT_DIR", "./")
 							</div>
 							<div class="col-md-2">
 								<a href="#">
-									Capacitance in Series and Parallel </br>
+									Capacitance in Series and Parallel <br>
 									<!-- Capacitance in Series TeX//-->
 									$$ C_s = {C_1 C_2 \over C_1 + C_2} $$
 									<!-- Capacitance in Parallel TeX//-->

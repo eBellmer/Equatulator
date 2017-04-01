@@ -2,7 +2,7 @@
 
 <div id="wrapper">
 		<!-- Sidebar -->
-		<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+		<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper">
 			<ul class="nav sidebar-nav">
 				<li class="sidebar-brand"><a href="<?php echo ROOT_DIR;?>">Equatulator.me</a></li>
 				<li><a href="<?php echo ROOT_DIR;?>">Home</a></li>
