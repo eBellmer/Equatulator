@@ -8,21 +8,19 @@ body
 	background-size: 50%;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-attachment: scroll;
+	background-attachment: fixed;
 
 	color: white;
 	-webkit-font-smoothing: antialiased;
 	font: normal 14px Roboto,arial,sans-serif;
 	text-align: center;
 }
-
 /* Body CSS */
 .container-fluid
 {
 	padding-top: 1%;
 	padding-bottom: 1%;
 }
-
 .row
 {
 	text-align: center;
@@ -144,7 +142,7 @@ body
 	margin: auto;
 	padding-left: auto;
 	padding-right: auto;
-	max-width: 800px;
+	max-width: 900px;
 	vertical-align: middle;
 }
 .aboutText
@@ -184,6 +182,11 @@ body
 	text-align: center;
 	padding: 5px;
 	border-top: 1px solid #444444;
+}
+#home
+{
+	margin-top: 35%;
+	padding-bottom: 35%;
 }
 a{color: inherit}
 a:link    {color:white; background-color:transparent; text-decoration:none}
