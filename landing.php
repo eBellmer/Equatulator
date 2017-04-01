@@ -64,21 +64,21 @@ define("ROOT_DIR", "./")
 						</div>
 						<div class="row">
 							<div class="col-md-2">
-								<a href="./lContract.php">
+								<a href="./calc/lContract.php">
 									Lorrentz Contraction </br>
 									<!-- Lorentz Contraction TeX//-->
 									$$ L = {1\over L_0 \sqrt{1-v^2 c^2}} $$
 								</a>
 							</div>
 							<div class="col-md-2">
-								<a href="./RelVelTD.php">
+								<a href="./calc/RelVelTD.php">
 									Relative Velocity Time Dilation </br>
 									<!-- Time Dilation RelVel TeX//-->
 									$$ \Delta t' = {\Delta t \over \sqrt{1 - {v^2 \over c^2}}} $$
 								</a>
 							</div>
 							<div class="col-md-2">
-								<a href="./schwRad.php">
+								<a href="./calc/schwRad.php">
 									Schwarzschild Radius </br>
 									<!-- Schwarzschild Radius TeX//-->
 									$$ r_s = {2GM \over c^2} $$
