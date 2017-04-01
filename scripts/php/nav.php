@@ -4,7 +4,7 @@
 		<!-- Sidebar -->
 		<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
 			<ul class="nav sidebar-nav">
-				<li class="sidebar-brand"><a href="#">equatulator.me</a></li>
+				<li class="sidebar-brand"><a href="<?php echo ROOT_DIR;?>">Equatulator.me</a></li>
 				<li><a href="<?php echo ROOT_DIR;?>">Home</a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<span class="caret"></span></a>
@@ -17,11 +17,19 @@
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Equations<span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
-						<li class="dropdown-header">Ready to calculate?</li>
-						<li><a href="<?php echo ROOT_DIR;?>calc/equations.php">Equation List</a></li>
+						<li class="dropdown-header">Special Relativity</li>
 						<li><a href="<?php echo ROOT_DIR;?>calc/lContract.php">Lorentz Contraction</a></li>
 						<li><a href="<?php echo ROOT_DIR;?>calc/RelVelTD.php">Relative Velocity Time Dilation</a></li>
 						<li><a href="<?php echo ROOT_DIR;?>calc/schwRad.php">Schwarzschild Radius</a></li>
+						<li><a href="#">Mass-Energy</a></li>
+						<li><a href="#">Composition of Velocities</a></li>
+						<li class="dropdown-header">Electrical Engineering</li>
+						<li><a href="#">Ohm's Law</a></li>
+						<li><a href="#">Resistance: Series & Parallel</a></li>
+						<li><a href="#">Capacitance: Series & Parallel</a></li>
+						<li><a href="#">Capacitance of a Capacitor</a></li>
+						<li class="dropdown-header">Computing</li>
+						<li><a href="#">A converter of some sort</a></li>
 					</ul>
 				</li>
 				<li class="dropdown">
