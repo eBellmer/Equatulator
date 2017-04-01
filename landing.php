@@ -13,8 +13,8 @@ define("ROOT_DIR", "./")
 		<?php require_once(ROOT_DIR . 'scripts/php/BSCSS.php');?>
 		<?php require_once(ROOT_DIR . 'scripts/php/mathJax.php');?>
 		<link rel="stylesheet" href="<?php echo ROOT_DIR;?>scripts/css/style.css">
-		<!-- <link rel="apple-touch-icon" href="youricon" sizes="57x57"" />
-		<link name="msapplication-square150x150logo" content="yourimage" /> //-->
+		<!-- <link rel="apple-touch-icon" href="https://equatulator.me/media/atomApple.png" sizes="57x57"" />
+		<link name="msapplication-square150x150logo" content="https://equatulator.me/media/atomUWP.png" /> //-->
 
 		<title>Equatulator</title>
 	</head>
