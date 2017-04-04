@@ -1,6 +1,6 @@
 <?php 
 session_start();
-define("ROOT_DIR", "./../")
+define("ROOT_DIR", "./../");
 ?>
 
 <!DOCTYPE html>
@@ -62,7 +62,7 @@ define("ROOT_DIR", "./../")
 						<div class="row">
 							<div class="col-md-12">
                 <p id="error-msg"></p>
-								<h3 id="result"></h3>
+								<h4>Result:</h4><p id="result"></p>
 							</div>
 						</div>
 						<div class="row row-options">
