@@ -21,7 +21,7 @@
 						<li><a href="<?php echo ROOT_DIR;?>calc/lContract.php">Lorentz Contraction</a></li>
 						<li><a href="<?php echo ROOT_DIR;?>calc/RelVelTD.php">Relative Velocity Time Dilation</a></li>
 						<li><a href="<?php echo ROOT_DIR;?>calc/schwRad.php">Schwarzschild Radius</a></li>
-						<li><a href="#">Mass-Energy</a></li>
+						<li><a href="<?php echo ROOT_DIR;?>calc/massEnergy.php">Mass-Energy</a></li>
 						<li><a href="#">Composition of Velocities</a></li>
 						<li class="dropdown-header">Electrical Engineering</li>
 						<li><a href="#">Ohm's Law</a></li>
