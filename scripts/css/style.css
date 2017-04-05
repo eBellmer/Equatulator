@@ -39,7 +39,7 @@ body
 {
 	margin-top: 0;
 	margin-bottom: 0;
-	font-size: 200%
+	font-size: 200%;
 }
 
 .row-output
@@ -57,6 +57,13 @@ body
 {
 	margin-top: 0;
 	margin-bottom: 0;
+}
+.row-equationArea
+{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 200%;
+	text-align: left;
 }
 .margin {margin-bottom: 45px;}
 
