@@ -23,7 +23,7 @@ define("ROOT_DIR", "./../")
 	<?php require_once(ROOT_DIR . 'scripts/php/mathJax.php');?>
 	<!-- MathJS //-->
 	<?php require_once(ROOT_DIR . 'scripts/php/mathJS.php');?>
-	<script src="<?php echo ROOT_DIR;?>scripts/js/#.js"></script>
+	<script src="<?php echo ROOT_DIR;?>scripts/js/massEnergy.js"></script>
 	<!-- Page Stylesheet //-->
 	<link rel="stylesheet" href="<?php echo ROOT_DIR;?>scripts/css/style.css">
 
@@ -45,7 +45,7 @@ define("ROOT_DIR", "./../")
 					<div class="col-md-12">
 						<!-- Mass-Energy TeX//-->
 						$$ E_0 = m_0 c^2 $$
-						$$ E = {E_0 \over \sqrt{1 - {v^2 \over c^2}}} $$
+						$$ E = {E_0 \over \sqrt{1 - {v^2 \over c^2}}} = {m_0 c^2 \over \sqrt{1 - {v^2 \over c^2}}} $$
 					</div>
 				</div>
 				<div class="row row-inputs">
@@ -79,16 +79,16 @@ define("ROOT_DIR", "./../")
 						<div class="panel-group">
 							<div class="panel">
 								<div class="panel-heading">
-									<h3 class="panel-title">
+									<div class="panel-title">
 										<h3><a data-toggle="collapse" href="#description">Description</a></h3>
-									</h3>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-3">
 						<!-- Trigger the modal with a button -->
-						<h3><a data-toggle="modal" data-target="#options">Options</a></h3>
+						<a data-toggle="modal" data-target="#options"><h3>Options</h3></a>
 						<!-- Modal -->
 						<div id="options" class="modal fade" role="dialog">
 							<div class="modal-dialog modal-sm">
