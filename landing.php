@@ -12,7 +12,7 @@ define("ROOT_DIR", "./")
 
 		<?php require_once(ROOT_DIR . 'scripts/php/BSCSS.php');?>
 		<?php require_once(ROOT_DIR . 'scripts/php/mathJax.php');?>
-		<link rel="stylesheet" href="<?php echo ROOT_DIR;?>scripts/css/style.css">
+		<link rel="stylesheet" href="<?= ROOT_DIR;?>scripts/css/style.css">
 		<!-- <link rel="apple-touch-icon" href="https://equatulator.me/media/atomApple.png" sizes="57x57"" />
 		<link name="msapplication-square150x150logo" content="https://equatulator.me/media/atomUWP.png" /> //-->
 
@@ -21,7 +21,6 @@ define("ROOT_DIR", "./")
 	<body data-spy="scroll" data-offset="50">
     <?php include_once(ROOT_DIR . "scripts/php/analyticstracking.php") ?>
 		<?php require_once(ROOT_DIR . 'scripts/php/nav.php');?>
-
 		<div class="outer">
 			<div class="middle">
 				<div class="inner-1">
@@ -42,16 +41,14 @@ define("ROOT_DIR", "./")
 								<a href="#equations"><h4>Equations</h4></a>
 							</div>
 							<div class="col-md-2">
-								<a href="<?php echo ROOT_DIR;?>login/login.php"><h4>Login</h4></a>
+								<a href="<?= ROOT_DIR;?>login/login.php"><h4>Login</h4></a>
 							</div>
 							<div class="col-md-2">
-								<a href="<?php echo ROOT_DIR;?>about/"><h4>About</h4></a>
+								<a href="<?= ROOT_DIR;?>about/"><h4>About</h4></a>
 							</div>
 							<div class="col-md-3"></div>
 						</div>
 					</div>
-
-
 					<div class="container-fluid" id="equations">
 						<div class="row row-heading">
 							<div class="col-md-12">
@@ -98,7 +95,6 @@ define("ROOT_DIR", "./")
 							<div class="col-md-2"></div>
 						</div>
 						<!-- End of Special Relativity Equations //-->
-
 						<!-- Electrical Engineering Equations //-->
 						<div class="row row-equationArea">
 							<div class="col-md-4">
@@ -138,7 +134,6 @@ define("ROOT_DIR", "./")
 							<div class="col-md-2"></div>
 						</div>
 						<!-- End of Electrical Engineering Equations //-->
-
 						<!-- Computing Equations //-->
 						<div class="row row-equationArea">
 							<div class="col-md-4">

@@ -22,9 +22,9 @@ define("ROOT_DIR", "./../");
 	<?php require_once(ROOT_DIR . 'scripts/php/mathJax.php');?>
 	<!-- MathJS //-->
 	<?php require_once(ROOT_DIR . 'scripts/php/mathJS.php');?>
-	<script src="<?php echo ROOT_DIR;?>scripts/js/compVel.js"></script>
+	<script src="<?= ROOT_DIR;?>scripts/js/compVel.js"></script>
 	<!-- Page Stylesheet //-->
-	<link rel="stylesheet" href="<?php echo ROOT_DIR;?>scripts/css/style.css">
+	<link rel="stylesheet" href="<?= ROOT_DIR;?>scripts/css/style.css">
 
 	<title>Composition of Velocities</title>
 </head>

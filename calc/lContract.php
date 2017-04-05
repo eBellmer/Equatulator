@@ -18,7 +18,7 @@ define("ROOT_DIR", "./../");
 		<?php require_once(ROOT_DIR . 'scripts/php/mathJS.php');?>
 		<script src="<?php echo ROOT_DIR;?>scripts/js/lCont.js"></script>
 		<!-- Page Stylesheet //-->
-		<link rel="stylesheet" href="<?php echo ROOT_DIR;?>scripts/css/style.css">
+		<link rel="stylesheet" href="<?= ROOT_DIR;?>scripts/css/style.css">
 
 		<title>Lorentz Contraction</title>
 	</head>
