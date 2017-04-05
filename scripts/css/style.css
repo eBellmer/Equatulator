@@ -3,12 +3,8 @@
 
 body 
 {
-	background-color: #262626;
-	background-image: url("https://equatulator.me/media/atomMaster.svg");
 	background-size: 50%;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
+	background: #262626 url("https://equatulator.me/media/atomMaster.svg") no-repeat fixed center;
 
 	color: white;
 	-webkit-font-smoothing: antialiased;
@@ -161,7 +157,7 @@ body
 	background-color: inherit;
 	border: none;
 	border-radius: inherit;
-	padding: 0px;
+	padding: 0;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 }
@@ -169,7 +165,7 @@ body
 {
 	border: none;
 	border-radius: inherit;
-	padding: 0px;
+	padding: 0;
 
 }
 .modal-content, .modal, .modal-body, .modal-header
