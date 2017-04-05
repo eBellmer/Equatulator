@@ -1,11 +1,3 @@
-math.config(
-	{
-		//math.config is currently non-functional and needs to be addressed.
-		number: 'BigNumber',  // Default type of number: 'number' (default), 'BigNumber', or 'Fraction'
-		precision: 10         // Number of significant digits for BigNumbers
-	}
-);
-
 function calculate()
 {
   var units = "m";
