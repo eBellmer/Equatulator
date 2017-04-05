@@ -94,13 +94,7 @@ define("ROOT_DIR", "./")
 									$$ E = {E_0 \over \sqrt{1 - {v^2 \over c^2}}} $$
 								</a>
 							</div>
-							<div class="col-md-2">
-								<a href="./calc/compVel.php">
-									Composition of Velocities
-									<!-- Composition of Velocities TeX//-->
-									$$ v = {v_1 + v_2 \over 1 + {v_1 + v_2 \over c^2}} $$
-								</a>
-							</div>
+							<div class="col-md-2"></div>
 							<div class="col-md-2"></div>
 						</div>
 						<!-- End of Special Relativity Equations //-->
