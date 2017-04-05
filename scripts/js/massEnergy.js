@@ -3,7 +3,7 @@
  */
 function calculate()
 {
-	//var units = "m";
+	var percentUnits = "%";
 	var energyUnit = "MJ";
 	var c = 299792458;
 	var m0 = document.getElementById("rMass").value;
@@ -27,11 +27,11 @@ function calculate()
 
 		var EE0 = math.divide(math.bignumber(E), math.bignumber(E0));
 
-		document.getElementById("result").innerHTML = "Rest mass energy E0: " +  E0 + "" + energyUnit + "<br>" +
+		document.getElementById("result").innerHTML =
+			"Rest mass energy E0: " +  E0 + "" + energyUnit + "<br>" +
 			"Relativistic mass energy E: " +  E + "" + energyUnit + "<br>" +
 			"Mass energy rate E/E0: " +  EE0 + "<br>" +
-			"Velocity ratio to light v/c: " + vc1 + "%";
-		//document.getElementById("result").innerHTML = "Relativistic mass energy E: " +  E + "" + energyUnit;
+			"Velocity ratio to light v/c: " + vc1 + percentUnits;
 
 	}
 	else if(m0 <= 0)
