@@ -59,7 +59,7 @@ define("ROOT_DIR", "./")
 							</div>
 						</div>
 						<!-- Special Relativity Equations//-->
-						<div class="row row-equation">
+						<div class="row row-equationArea">
 							<div class="col-md-4">
 								<h3>Special Relativity:</h3>
 							</div>
@@ -95,20 +95,18 @@ define("ROOT_DIR", "./")
 								</a>
 							</div>
 							<div class="col-md-2">
-								<a href="#">
+								<a href="./calc/compVel.php">
 									Composition of Velocities
 									<!-- Composition of Velocities TeX//-->
 									$$ v = {v_1 + v_2 \over 1 + {v_1 + v_2 \over c^2}} $$
 								</a>
 							</div>
-							<div class="col-md-2">
-								<a href="#">I don't know</a>
-							</div>
+							<div class="col-md-2"></div>
 						</div>
 						<!-- End of Special Relativity Equations //-->
 
 						<!-- Electrical Engineering Equations //-->
-						<div class="row row-equation">
+						<div class="row row-equationArea">
 							<div class="col-md-4">
 								<h3>Electrical Engineering:</h3>
 							</div>
@@ -142,56 +140,26 @@ define("ROOT_DIR", "./")
 							<div class="col-md-2">
 								<a href="#">Capacitance of a Capacitor</a>
 							</div>
-							<div class="col-md-2">
-								<a href="#">Maybe</a>
-							</div>
-							<div class="col-md-2">
-								<a href="#">I don't know</a>
-							</div>
+							<div class="col-md-2"></div>
+							<div class="col-md-2"></div>
 						</div>
 						<!-- End of Electrical Engineering Equations //-->
 
 						<!-- Computing Equations //-->
-						<div class="row row-equation">
+						<div class="row row-equationArea">
 							<div class="col-md-4">
 								<h3>Computing:</h3>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-2">
-								<a href="#">
-									Ohm's Law <br>
-									<!-- Ohm's Law TeX//-->
-									$$ V = {I \over R} $$
-								</a>
 							</div>
 							<div class="col-md-2">
-								<a href="#">
-									Resistance in Series and Parallel <br>
-									<!-- Resistance in Series TeX//-->
-									$$ R_s = R_1 + R_2 $$
-									<!-- Resistance in Parallel TeX//-->
-									$$ R_p = {R_1 R_2 \over R_1 + R_2} $$
-								</a>
 							</div>
-							<div class="col-md-2">
-								<a href="#">
-									Capacitance in Series and Parallel <br>
-									<!-- Capacitance in Series TeX//-->
-									$$ C_s = {C_1 C_2 \over C_1 + C_2} $$
-									<!-- Capacitance in Parallel TeX//-->
-									$$ C_p = C_1 + C_2 $$
-								</a>
-							</div>
-							<div class="col-md-2">
-								<a href="#">Capacitance of a Capacitor</a>
-							</div>
-							<div class="col-md-2">
-								<a href="#">Maybe</a>
-							</div>
-							<div class="col-md-2">
-								<a href="#">I don't know</a>
-							</div>
+							<div class="col-md-2"></div>
+							<div class="col-md-2"></div>
+							<div class="col-md-2"></div>
+							<div class="col-md-2"></div>
 						</div>
 						<!-- End of Computing Equations //-->
 					</div>
