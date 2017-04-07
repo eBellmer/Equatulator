@@ -127,9 +127,7 @@ define("ROOT_DIR", "./")
 									$$ C_p = C_1 + C_2 $$
 								</a>
 							</div>
-							<div class="col-md-2">
-								<a href="<?= ROOT_DIR;?>calc/capacitanceCap.php">Capacitance of a Capacitor</a>
-							</div>
+							<div class="col-md-2"></div>
 							<div class="col-md-2"></div>
 							<div class="col-md-2"></div>
 						</div>

@@ -26,7 +26,6 @@
 						<li><a href="<?= ROOT_DIR;?>calc/ohmsLaw.php">Ohm's Law</a></li>
 						<li><a href="<?= ROOT_DIR;?>calc/resistanceSP.php">Resistance: Series & Parallel</a></li>
 						<li><a href="<?= ROOT_DIR;?>calc/capacitanceSP.php">Capacitance: Series & Parallel</a></li>
-						<li><a href="<?= ROOT_DIR;?>calc/capacitanceCap.php">Capacitance of a Capacitor</a></li>
 						<li class="dropdown-header">Computing</li>
 						<li><a href="#">A converter of some sort</a></li>
 					</ul>
