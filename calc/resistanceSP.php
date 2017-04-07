@@ -22,7 +22,7 @@ define("ROOT_DIR", "./../");
 	<?php require_once(ROOT_DIR . 'scripts/php/mathJax.php');?>
 	<!-- MathJS //-->
 	<?php require_once(ROOT_DIR . 'scripts/php/mathJS.php');?>
-	<script src="<?= ROOT_DIR;?>scripts/js/#"></script>
+	<script src="<?= ROOT_DIR;?>scripts/js/resistanceSP.js"></script>
 	<!-- Page Stylesheet //-->
 	<link rel="stylesheet" href="<?= ROOT_DIR;?>scripts/css/style.css">
 
@@ -53,10 +53,10 @@ define("ROOT_DIR", "./../");
 						<div class="col-md-2">
 						</div>
 						<div class="col-md-4">
-							<input type="number" name="aLength" value="" id="aLength" class="form-control input-sm chat-input" placeholder="Actual Length (metres)"/>
+							<input type="number" name="resistor1" value="" id="resistor1" class="form-control input-sm chat-input" placeholder="Resistor 1 (ohms)"/>
 						</div>
 						<div class="col-md-4">
-							<input type="number" name="rVelocity" value="" id="rVelocity" class="form-control input-sm chat-input" placeholder="Relative Velocity (m/s)"/>
+							<input type="number" name="resistor2" value="" id="resistor2" class="form-control input-sm chat-input" placeholder="Resistor 2 (ohms)"/>
 						</div>
 						<div class="col-md-2">
 						</div>
@@ -118,13 +118,7 @@ define("ROOT_DIR", "./../");
 					<div id="description" class="panel-collapse collapse">
 						<div class="panel-body">
 							<p>
-								Length contraction is the phenomenon of a decrease in length of an object as measured by an observer who is traveling at any non-zero velocity relative to the object.
-								This contraction (more formally called Lorentz contraction or Lorentz–FitzGerald contraction after Hendrik Lorentz and George Francis FitzGerald) is usually only
-								noticeable at a substantial fraction of the speed of light.<br>
-								Length contraction is only in the direction parallel to the direction in which the observed body is travelling.<br>
-								For standard objects, this effect is negligible at everyday speeds, and can be ignored for all regular purposes. Only at greater speeds, or for electron motion, does it become significant.<br>
-								At a speed of 13,400,000 m/s (30 million mph, 0.0447c) contracted length is 99.9% of the length at rest; at a speed of 42,300,000 m/s (95 million mph, 0.141c), the length is still 99%.
-								As the magnitude of the velocity approaches the speed of light, the effect becomes dominant.
+								K bb.
 							</p>
 						</div>
 					</div>
