@@ -22,7 +22,7 @@ define("ROOT_DIR", "./../");
 	<?php require_once(ROOT_DIR . 'scripts/php/mathJax.php');?>
 	<!-- MathJS //-->
 	<?php require_once(ROOT_DIR . 'scripts/php/mathJS.php');?>
-	<script src="<?= ROOT_DIR;?>scripts/js/lCont.js"></script>
+	<script src="<?= ROOT_DIR;?>scripts/js/capacitanceSP.js"></script>
 	<!-- Page Stylesheet //-->
 	<link rel="stylesheet" href="<?= ROOT_DIR;?>scripts/css/style.css">
 
@@ -53,10 +53,10 @@ define("ROOT_DIR", "./../");
 						<div class="col-md-2">
 						</div>
 						<div class="col-md-4">
-							<input type="number" name="aLength" value="" id="aLength" class="form-control input-sm chat-input" placeholder="Actual Length (metres)"/>
+							<input type="number" name="capacitor1" value="" id="capacitor1" class="form-control input-sm chat-input" placeholder="Capacitor 1 (farads)"/>
 						</div>
 						<div class="col-md-4">
-							<input type="number" name="rVelocity" value="" id="rVelocity" class="form-control input-sm chat-input" placeholder="Relative Velocity (m/s)"/>
+							<input type="number" name="capacitor2" value="" id="capacitor2" class="form-control input-sm chat-input" placeholder="Capacitor 2 (farads)"/>
 						</div>
 						<div class="col-md-2">
 						</div>
