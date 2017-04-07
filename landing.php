@@ -103,14 +103,14 @@ define("ROOT_DIR", "./")
 						</div>
 						<div class="row">
 							<div class="col-md-2">
-								<a href="#">
+								<a href="<?= ROOT_DIR;?>calc/ohmsLaw.php">
 									Ohm's Law <br>
 									<!-- Ohm's Law TeX//-->
 									$$ V = {I \over R} $$
 								</a>
 							</div>
 							<div class="col-md-2">
-								<a href="#">
+								<a href="<?= ROOT_DIR;?>calc/resistanceSP.php">
 									Resistance in Series and Parallel <br>
 									<!-- Resistance in Series TeX//-->
 									$$ R_s = R_1 + R_2 $$
@@ -119,7 +119,7 @@ define("ROOT_DIR", "./")
 								</a>
 							</div>
 							<div class="col-md-2">
-								<a href="#">
+								<a href="<?= ROOT_DIR;?>calc/capacitanceSP.php">
 									Capacitance in Series and Parallel <br>
 									<!-- Capacitance in Series TeX//-->
 									$$ C_s = {C_1 C_2 \over C_1 + C_2} $$
@@ -128,7 +128,7 @@ define("ROOT_DIR", "./")
 								</a>
 							</div>
 							<div class="col-md-2">
-								<a href="#">Capacitance of a Capacitor</a>
+								<a href="<?= ROOT_DIR;?>calc/capacitanceCap.php">Capacitance of a Capacitor</a>
 							</div>
 							<div class="col-md-2"></div>
 							<div class="col-md-2"></div>
