@@ -105,6 +105,7 @@
 
 	<?php require_once(ROOT_DIR . 'scripts/php/BSCSS.php');?>
 	<link rel="stylesheet" href="<?= ROOT_DIR;?>scripts/css/style.css">
+	<link rel="stylesheet" href="<?= ROOT_DIR;?>scripts/css/slide-up-input.css">
 
 	<title>Login | Equatulator</title>
 </head>
@@ -124,9 +125,11 @@
 								<div class="col-md-3"></div>
 								<div class="col-md-3">
 									<input type="text" name="username" value="<?= $submitted_username; ?>" id="username" class="form-control input-sm chat-input" placeholder="Username"/>
+									<!-- <span><input class="slide-up" id="username" type="text" placeholder="Username" value="?= $submitted_username; ?>"/><label for="password">Username</label></span> //-->
 								</div>
 								<div class="col-md-3">
 									<input type="password" name="pwd" value="" max="50" id="pwd" class="form-control input-sm chat-input" placeholder="Password"/>
+									<!-- <span><input class="slide-up" id="pwd" type="password" placeholder="pwd" /><label for="password">Password</label></span> //-->
 								</div>
 								<div class="col-md-3"></div>
 							</div>
