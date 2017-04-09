@@ -80,7 +80,7 @@ define("ROOT_DIR", "./../");
 							</div>
 							<div class="col-md-3">
 								<!-- Trigger the modal with a button -->
-								<h3><a data-toggle="modal" data-target="#options">Options</a></h3>
+								<a href="#" data-toggle="modal" data-target="#options"><h3>Options</h3></a>
 								<!-- Modal -->
 								<div id="options" class="modal fade" role="dialog">
 									<div class="modal-dialog modal-sm">
@@ -98,7 +98,7 @@ define("ROOT_DIR", "./../");
 												</p>
 											</div>
 											<div class="modal-footer">
-												<a href="#"><h4 data-dismiss="modal">Close</h4></a>
+												<a href="#" data-dismiss="modal"><h4>Close</h4></a>
 											</div>
 										</div>
 									</div>
