@@ -87,12 +87,26 @@ define("ROOT_DIR", "./")
 								<a href="./calc/massEnergy.php">
 									Mass-Energy
 									<!-- Mass-Energy TeX//-->
-									$$ E_0 = m_0 c^2 $$
-									$$ E = {E_0 \over \sqrt{1 - {v^2 \over c^2}}} $$
+									$$ E = m c^2 $$
+									$$ E = {E \over \sqrt{1 - {v^2 \over c^2}}} $$
 								</a>
 							</div>
-							<div class="col-md-2"></div>
-							<div class="col-md-2"></div>
+							<div class="col-md-2">
+								<a href="./calc/dopplerLight.php">
+									Doppler Shift (Light)
+									<!-- Doppler Shift (Light) TeX//-->
+									$$ \lambda = \lambda_0 {1 - {v \over c} cos0 \over \sqrt {1 - {v^2 \over c^2}}} $$
+									<!-- $$ v = v_0 {\sqrt {1 - {v^2 \over c^2}} \over 1 - {v \over c} cos0} $$ //-->
+								</a>
+							</div>
+							<div class="col-md-2">
+								<a href="./calc/dopplerSound.php">
+									Doppler Shift (Sound)
+									<!-- Doppler Shift (Light) TeX//-->
+									$$ f = f_0 {v - v_0 \over 0v - v_s} $$
+									<!-- $$ v = (331.5+0.61T) m/s $$ //-->
+								</a>
+							</div>
 						</div>
 						<!-- End of Special Relativity Equations //-->
 						<!-- Electrical Engineering Equations //-->

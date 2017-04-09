@@ -22,6 +22,8 @@
 						<li><a href="<?= ROOT_DIR;?>calc/RelVelTD.php">Relative Velocity Time Dilation</a></li>
 						<li><a href="<?= ROOT_DIR;?>calc/schwRad.php">Schwarzschild Radius</a></li>
 						<li><a href="<?= ROOT_DIR;?>calc/massEnergy.php">Mass-Energy</a></li>
+						<li><a href="<?= ROOT_DIR;?>calc/dopplerLight.php">Doppler Shift (Light)</a></li>
+						<li><a href="<?= ROOT_DIR;?>calc/dopplerSound.php">Doppler Shift (Sound)</a></li>
 						<li class="dropdown-header">Electrical Engineering</li>
 						<li><a href="<?= ROOT_DIR;?>calc/ohmsLaw.php">Ohm's Law</a></li>
 						<li><a href="<?= ROOT_DIR;?>calc/resistanceSP.php">Resistance: Series & Parallel</a></li>
