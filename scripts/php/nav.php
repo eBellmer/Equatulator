@@ -9,9 +9,9 @@
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
-						<li class="dropdown-header">Give us your soul.</li>
-						<li><a href="<?= ROOT_DIR;?>SecureLogin/login.php">Login</a></li>
-						<li><a href="<?= ROOT_DIR;?>SecureLogin/register.php">Register</a></li>
+						<li class="dropdown-header">Logged Out.</li>
+						<li><a href="<?= ROOT_DIR;?>login/login.php">Login</a></li>
+						<li><a href="<?= ROOT_DIR;?>login/register.php">Register</a></li>
 					</ul>
 				</li>
 				<li class="dropdown">
