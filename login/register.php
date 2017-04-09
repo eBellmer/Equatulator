@@ -18,7 +18,7 @@
         } 
          
         // Ensure that the user has entered a non-empty password 
-        if(empty($_POST['password'])) 
+        if(empty($_POST['pwd']))
         { 
             die("Please enter a password."); 
         } 
@@ -116,7 +116,7 @@
         // string representing the 32 byte sha512 hash of the password.  The original 
         // password cannot be recovered from the hash.  For more information: 
         // http://en.wikipedia.org/wiki/Cryptographic_hash_function 
-        $password = openssl_digest($_POST['password'] . $salt, 'sha512'); 
+        $password = openssl_digest($_POST['pwd'] . $salt, 'sha512');
          
         // Next we hash the hash value 65536 more times.  The purpose of this is to 
         // protect against brute force attacks.  Now an attacker must compute the hash 65537 
@@ -163,7 +163,7 @@
 	<?php require_once(ROOT_DIR . 'scripts/php/BSCSS.php');?>
 	<link rel="stylesheet" href="<?= ROOT_DIR;?>scripts/css/style.css">
 
-	<title>Register</title>
+	<title>Register | Equatulator</title>
 </head>
 <body data-spy="scroll" data-offset="50">
 	<?php include_once(ROOT_DIR . "scripts/php/analyticstracking.php") ?>
@@ -172,28 +172,38 @@
 		<div class="middle">
 			<div class="inner-1">
 				<div class="container-fluid">
-
-
+					<div class="row">
+						<div class="col-md-12">Register</div>
+					</div>
 					<form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST">
 						<div class="form-login">
-							<h4>Welcome back.</h4>
-							<input type="text" name="username" value="" id="username" class="form-control input-sm chat-input" placeholder="username"/>
-							</br>
-              <input type="text" name="email" value="" id="email" class="form-control input-sm chat-input" placeholder="email"/>
-              </br>
-							<input type="password" name="password" value="" id="password" class="form-control input-sm chat-input" placeholder="password"/>
-							</br>
-							<div class="wrapper">
-									<button type="submit" class="btn btn-primary btn-md" value="Register" name="submit"> register <i class="fa fa-sign-in"></i></button>
+							<div class="row">
+								<div class="col-md-2"></div>
+								<div class="col-md-4">
+									<input type="text" name="username" value="" max="30" id="username" class="form-control input-sm chat-input" placeholder="Username"/>
+								</div>
+								<div class="col-md-4">
+									<input type="email" name="email" value="" id="email" class="form-control input-sm chat-input" placeholder="Email Address"/>
+								</div>
+								<div class="col-md-2"></div>
+							</div>
+							<div class="row">
+								<div class="col-md-2"></div>
+								<div class="col-md-4">
+									<input type="password" name="pwd" value="" min="6" max="50" id="pwd" class="form-control input-sm chat-input" placeholder="Password"/>
+								</div>
+								<div class="col-md-4">
+									<input type="password" name="pwdConfirm" value="" min="6" max="50" id="pwdConfirm" class="form-control input-sm chat-input" placeholder="Confirm Password"/>
+								</div>
+								<div class="col-md-2"></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<button type="submit" class="btn" value="Register" name="submit">Register<i class="fa fa-sign-in"></i></button>
 							</div>
 						</div>
 					</form>
-
-					<div class = "panel-footer text-center">
-						<p>Hosted on The 3agle Network</p>
-					</div>
-
-
 				</div>
 			</div>
 		</div>

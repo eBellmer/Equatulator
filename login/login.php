@@ -45,7 +45,7 @@
             // Using the password submitted by the user and the salt stored in the database, 
             // we now check to see whether the passwords match by hashing the submitted password 
             // and comparing it to the hashed version already stored in the database. 
-            $check_password = openssl_digest($_POST['password'] . $row['salt'], 'sha512'); 
+            $check_password = openssl_digest($_POST['pwd'] . $row['salt'], 'sha512');
             for($round = 0; $round < 65536; $round++) 
             { 
                 $check_password = openssl_digest($check_password . $row['salt'], 'sha512'); 
@@ -74,9 +74,9 @@
             // We will check this index on the private members-only page to determine whether 
             // or not the user is logged in.  We can also use it to retrieve 
             // the user's details. 
-            $_SESSION['3agleUser'] = $row;
+            $_SESSION['equatulatorUser'] = $row;
              
-            // Redirect the user to the private members-only page. 
+            // Redirect the user to the index page.
             header("Location: ./../index.php"); 
             exit(); 
         } 
@@ -106,7 +106,7 @@
 	<?php require_once(ROOT_DIR . 'scripts/php/BSCSS.php');?>
 	<link rel="stylesheet" href="<?= ROOT_DIR;?>scripts/css/style.css">
 
-	<title>Login</title>
+	<title>Login | Equatulator</title>
 </head>
 <body data-spy="scroll" data-offset="50">
 	<?php include_once(ROOT_DIR . "scripts/php/analyticstracking.php") ?>
@@ -115,36 +115,28 @@
 		<div class="middle">
 			<div class="inner-1">
 				<div class="container-fluid">
-
-
-					<div class = "panel pn-1 panel-default">
-						<div class = "panel-heading text-center">
-							<h4>Login</h4>
-						</div>
-						<div class="panel-body">
+					<div class="row">
+						<div class="col-md-12">Login</div>
+					</div>
+					<form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST">
+						<div class="form-login">
 							<div class="row">
+								<div class="col-md-3"></div>
 								<div class="col-md-3">
-									<form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST">
-										<div class="form-login">
-											<h4>Welcome back.</h4>
-											<input type="text" name="username" value="<?php echo $submitted_username; ?>" id="username" class="form-control input-sm chat-input" placeholder="username"/>
-											</br>
-											<input type="password" name="password" value="" id="password" class="form-control input-sm chat-input" placeholder="password"/>
-											</br>
-											<div class="wrapper">
-													<button type="submit" class="btn btn-primary btn-md" value="submit" name="submit">login <i class="fa fa-sign-in"></i></button>
-											</div>
-										</div>
-									</form>
+									<input type="text" name="username" value="<?= $submitted_username; ?>" id="username" class="form-control input-sm chat-input" placeholder="Username"/>
 								</div>
+								<div class="col-md-3">
+									<input type="password" name="pwd" value="" max="50" id="pwd" class="form-control input-sm chat-input" placeholder="Password"/>
+								</div>
+								<div class="col-md-3"></div>
 							</div>
 						</div>
-						<div class = "panel-footer text-center">
-							<p>Hosted on The 3agle Network</p>
+						<div class="row">
+							<div class="col-md-12">
+								<button type="submit" class="btn" value="submit" name="submit">Login<i class="fa fa-sign-in"></i></button>
+							</div>
 						</div>
-					</div>
-
-
+					</form>
 				</div>
 			</div>
 		</div>
