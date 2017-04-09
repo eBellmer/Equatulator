@@ -28,7 +28,7 @@ define("ROOT_DIR", "./../")
 	<!-- Page Stylesheet //-->
 	<link rel="stylesheet" href="<?= ROOT_DIR;?>scripts/css/style.css">
 
-	<title>Mass-Energy</title>
+	<title>Mass-Energy | Equatulator</title>
 </head>
 <body>
 <?php include_once(ROOT_DIR . "scripts/php/analyticstracking.php") ?>

@@ -16,7 +16,7 @@ define("ROOT_DIR", "./")
 		<!-- <link rel="apple-touch-icon" href="https://equatulator.me/media/atomApple.png" sizes="57x57"" />
 		<link name="msapplication-square150x150logo" content="https://equatulator.me/media/atomUWP.png" /> //-->
 
-		<title>Equatulator</title>
+		<title>Equatulator | Equatulator</title>
 	</head>
 	<body data-spy="scroll" data-offset="50">
     <?php include_once(ROOT_DIR . "scripts/php/analyticstracking.php") ?>

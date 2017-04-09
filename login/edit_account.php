@@ -135,7 +135,7 @@
 	<?php require_once(ROOT_DIR . 'scripts/php/BSCSS.php');?>
 	<link rel="stylesheet" href="<?= ROOT_DIR;?>scripts/css/style.css">
 
-	<title>Login</title>
+	<title>Account | Equatulator</title>
 </head>
 <body data-spy="scroll" data-offset="50">
 	<?php include_once(ROOT_DIR . "scripts/php/analyticstracking.php") ?>

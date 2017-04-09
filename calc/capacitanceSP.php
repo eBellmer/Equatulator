@@ -26,7 +26,7 @@ define("ROOT_DIR", "./../");
 	<!-- Page Stylesheet //-->
 	<link rel="stylesheet" href="<?= ROOT_DIR;?>scripts/css/style.css">
 
-	<title>Capacitance in Series and Parallel</title>
+	<title>Capacitance in Series and Parallel | Equatulator</title>
 </head>
 <body>
 <?php include_once(ROOT_DIR . "scripts/php/analyticstracking.php") ?>

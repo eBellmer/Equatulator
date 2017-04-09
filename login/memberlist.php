@@ -60,7 +60,7 @@
   <title>Members List</title>
 </head>
 <body>
-  <h1>Memberlist</h1> 
+  <h1>Members | Equatulator</h1>
   <table> 
       <tr> 
           <th>ID</th> 

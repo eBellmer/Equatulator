@@ -26,7 +26,7 @@ define("ROOT_DIR", "./../");
 	<!-- Page Stylesheet //-->
 	<link rel="stylesheet" href="<?= ROOT_DIR;?>scripts/css/style.css">
 
-	<title>Ohm's Law</title>
+	<title>Ohm's Law | Equatulator</title>
 </head>
 <body>
 <?php include_once(ROOT_DIR . "scripts/php/analyticstracking.php") ?>

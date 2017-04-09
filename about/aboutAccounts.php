@@ -13,7 +13,7 @@ define("ROOT_DIR", "./../")
 		<?php require_once(ROOT_DIR . 'scripts/php/BSCSS.php');?>
 		<link rel="stylesheet" href="<?= ROOT_DIR;?>scripts/css/style.css">
     
-		<title>About Accounts</title>
+		<title>About Accounts | Equatulator</title>
   </head>
   <body>
         <?php include_once(ROOT_DIR . "scripts/php/analyticstracking.php") ?>
