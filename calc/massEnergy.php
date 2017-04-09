@@ -45,8 +45,8 @@ define("ROOT_DIR", "./../")
 				<div class="row row-equation">
 					<div class="col-md-12">
 						<!-- Mass-Energy TeX//-->
-						$$ E_0 = m_0 c^2 $$
-						$$ E = {E_0 \over \sqrt{1 - {v^2 \over c^2}}} = {m_0 c^2 \over \sqrt{1 - {v^2 \over c^2}}} $$
+						$$ E = m c^2 $$
+						$$ E0 = {E \over \sqrt{1 - {v^2 \over c^2}}} = {m c^2 \over \sqrt{1 - {v^2 \over c^2}}} $$
 					</div>
 				</div>
 				<div class="row row-inputs">
