@@ -63,21 +63,21 @@ define("ROOT_DIR", "./")
 						</div>
 						<div class="row">
 							<div class="col-md-2">
-								<a href="./calc/lContract.php">
+								<a href="<?= ROOT_DIR ?>calc/lContract.php">
 									Lorrentz Contraction <br>
 									<!-- Lorentz Contraction TeX//-->
 									$$ L = {1\over L_0 \sqrt{1-v^2 c^2}} $$
 								</a>
 							</div>
 							<div class="col-md-2">
-								<a href="./calc/RelVelTD.php">
+								<a href="<?= ROOT_DIR ?>calc/RelVelTD.php">
 									Relative Velocity Time Dilation <br>
 									<!-- Time Dilation RelVel TeX//-->
 									$$ \Delta t' = {\Delta t \over \sqrt{1 - {v^2 \over c^2}}} $$
 								</a>
 							</div>
 							<div class="col-md-2">
-								<a href="./calc/schwRad.php">
+								<a href="<?= ROOT_DIR ?>calc/schwRad.php">
 									Schwarzschild Radius <br>
 									<!-- Schwarzschild Radius TeX//-->
 									$$ r_s = {2GM \over c^2} $$
@@ -92,7 +92,7 @@ define("ROOT_DIR", "./")
 								</a>
 							</div>
 							<div class="col-md-2">
-								<a href="./calc/dopplerLight.php">
+								<a href="<?= ROOT_DIR ?>calc/dopplerLight.php">
 									Doppler Shift (Light)
 									<!-- Doppler Shift (Light) TeX//-->
 									$$ \lambda = \lambda_0 {1 - {v \over c} cos0 \over \sqrt {1 - {v^2 \over c^2}}} $$
@@ -100,7 +100,7 @@ define("ROOT_DIR", "./")
 								</a>
 							</div>
 							<div class="col-md-2">
-								<a href="./calc/dopplerSound.php">
+								<a href="<?= ROOT_DIR ?>calc/dopplerSound.php">
 									Doppler Shift (Sound)
 									<!-- Doppler Shift (Light) TeX//-->
 									$$ f = f_0 {v - v_0 \over 0v - v_s} $$
@@ -146,7 +146,7 @@ define("ROOT_DIR", "./")
 							<div class="col-md-2"></div>
 						</div>
 						<!-- End of Electrical Engineering Equations //-->
-						<!-- Computing Equations //-->
+						<!-- Computing Equations
 						<div class="row row-equationArea">
 							<div class="col-md-4">
 								<h3>Computing:</h3>
@@ -162,7 +162,7 @@ define("ROOT_DIR", "./")
 							<div class="col-md-2"></div>
 							<div class="col-md-2"></div>
 						</div>
-						<!-- End of Computing Equations //-->
+						End of Computing Equations //-->
 					</div>
 				</div>
 			</div>
