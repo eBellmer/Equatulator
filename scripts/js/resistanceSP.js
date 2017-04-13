@@ -18,6 +18,7 @@ function calculate()
 		var R1R2 = math.multiply(r1, r2);
 		var Rp = math.divide(R1R2, R1aR2);
 
+		document.getElementById("resultHeader").innerHTML = "Results:";
 		document.getElementById("result").innerHTML =
 			"Series Resistance: " +  Rs + "" + units + "<br>" +
 			"Parallel Resistance: " + Rp + "" + units;

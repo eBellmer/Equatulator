@@ -27,6 +27,7 @@ function calculate()
 
 		var EE0 = math.divide(math.bignumber(E0), math.bignumber(E));
 
+		document.getElementById("resultHeader").innerHTML = "Results:";
 		document.getElementById("result").innerHTML =
 			"Rest mass energy E: " +  E + "" + energyUnit + "<br>" +
 			"Relativistic mass energy E0: " +  E0 + "" + energyUnit + "<br>" +

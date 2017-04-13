@@ -62,7 +62,7 @@ define("ROOT_DIR", "./../");
 						<div class="row">
 							<div class="col-md-12">
                 <p id="error-msg"></p>
-								<h4>Result:</h4><p id="result"></p>
+								<h4 id="resultHeader"></h4><p id="result"></p>
 							</div>
 						</div>
 						<div class="row row-options">

@@ -18,6 +18,7 @@ function calculate()
 		var C1C2 = math.multiply(c1, c2);
 		var Cs = math.divide(C1C2, C1aC2);
 
+		document.getElementById("resultHeader").innerHTML = "Results:";
 		document.getElementById("result").innerHTML =
 			"Series Capacitance: " +  Cs + "" + units + "<br>" +
 			"Parallel Capacitance: " + Cp + "" + units;

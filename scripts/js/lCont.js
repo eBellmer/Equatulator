@@ -17,6 +17,7 @@ function calculate()
     vc = math.sqrt(math.bignumber(vc));
     var L = math.multiply(math.bignumber(L0), math.bignumber(vc));
 
+	  document.getElementById("resultHeader").innerHTML = "Results:";
     document.getElementById("result").innerHTML = "Adjusted Length: " +  L + "" + units;
   }
 	else if(L0 <= 0)

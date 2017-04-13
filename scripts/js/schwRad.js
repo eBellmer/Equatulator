@@ -19,6 +19,7 @@ function calculate()
 		gm = math.multiply(gm, 2);
 		var rs = math.divide(gm, c);
 
+		document.getElementById("resultHeader").innerHTML = "Results:";
 		document.getElementById("result").innerHTML = "Swartzschild Radius: " +  rs + "" + units;
 	}
 	else if(g <= 0)
