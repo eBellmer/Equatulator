@@ -44,21 +44,23 @@ define("ROOT_DIR", "./../")
 				<div class="row row-equation">
 					<div class="col-md-12">
 						<!-- Doppler Shift (Light) TeX//-->
-						$$ f = f_0 {v - v_0 \over 0v - v_s} $$
+						$$ f = f_0 {v - v_0 \over v - v_s} $$
 						$$ v = (331.5+0.61T) m/s $$
 					</div>
 				</div>
 				<div class="row row-inputs">
 					<form id="dopplerSound">
-						<div class="col-md-2">
+						<div class="col-md-3">
+							<input type="number" name="temperature" value="" id="temperature" class="form-control input-sm chat-input" placeholder="Temperature (C)"/>
 						</div>
-						<div class="col-md-4">
-							<input type="number" name="rMass" value="" id="rMass" class="form-control input-sm chat-input" placeholder="Resting Mass (kg)"/>
+						<div class="col-md-3">
+							<input type="number" name="observerVelocity" value="" id="observerVelocity" class="form-control input-sm chat-input" placeholder="Observer Velocity (km/h)"/>
 						</div>
-						<div class="col-md-4">
-							<input type="number" name="rVelocity" value="" id="rVelocity" class="form-control input-sm chat-input" placeholder="Relative Velocity (m/s)"/>
+						<div class="col-md-3">
+							<input type="number" name="soundVelocity" value="" id="soundVelocity" class="form-control input-sm chat-input" placeholder="Velocity of Sound (km/h)"/>
 						</div>
-						<div class="col-md-2">
+						<div class="col-md-3">
+							<input type="number" name="frequency" value="" id="frequency" class="form-control input-sm chat-input" placeholder="Frequency of Sound (Hz)"/>
 						</div>
 					</form>
 				</div>
@@ -70,7 +72,7 @@ define("ROOT_DIR", "./../")
 				<div class="row">
 					<div class="col-md-12">
 						<p id="error-msg"></p>
-						<h4>Result:</h4><p id="result"></p>
+						<h4 id="resultHeader"></h4><p id="result"></p>
 					</div>
 				</div>
 				<div class="row row-options">
