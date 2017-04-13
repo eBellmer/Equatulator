@@ -79,9 +79,9 @@ define("ROOT_DIR", "./../");
 						<div class="panel-group">
 							<div class="panel">
 								<div class="panel-heading">
-									<h3 class="panel-title">
+									<div class="panel-title">
 										<h3><a data-toggle="collapse" href="#description">Description</a></h3>
-									</h3>
+									</div>
 								</div>
 							</div>
 						</div>
