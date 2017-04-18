@@ -23,6 +23,11 @@
     {
         die("Please enter a password.");
     }
+	  // Ensure that the user has entered a confirmation password
+	  if($_POST['pwdConfirm'] !== $_POST['pwd'])
+	  {
+		  die("Passwords do not match.");
+	  }
 
     // Make sure the user entered a valid E-Mail address
     // filter_var is a useful PHP function for validating form input, see:
@@ -200,7 +205,7 @@
 						</div>
 						<div class="row">
 							<div class="col-md-12">
-								<button type="submit" class="btn" value="Register" name="submit">Register<i class="fa fa-sign-in"></i></button>
+								<button type="submit" class="btn btn-default" value="Register" name="submit">Register<i class="fa fa-sign-in"></i></button>
 							</div>
 						</div>
 					</form>
