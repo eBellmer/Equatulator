@@ -136,7 +136,7 @@
 						</div>
 						<div class="row">
 							<div class="col-md-12">
-								<button type="submit" class="btn" value="submit" name="submit">Login<i class="fa fa-sign-in"></i></button>
+								<button type="submit" class="btn btn-default" value="submit" name="submit">Login<i class="fa fa-sign-in"></i></button>
 							</div>
 						</div>
 					</form>
