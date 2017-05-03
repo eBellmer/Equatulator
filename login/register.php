@@ -24,7 +24,7 @@
         die("Please enter a password.");
     }
 	  // Ensure that the user has entered a confirmation password
-	  if($_POST['pwdConfirm'] !== $_POST['pwd'])
+	  if($_POST['pwdConfirm'] != $_POST['pwd'])
 	  {
 		  die("Passwords do not match.");
 	  }
@@ -42,7 +42,7 @@
     // user is already in use.  A SELECT query is used to retrieve data from the database.
     // :username is a special token, we will substitute a real value in its place when
     // we execute the query.
-    $query = "SELECT 1 FROM users WHERE username = :username";
+    $query = "SELECT 1 FROM equ_users WHERE username = :username";
 
     // This contains the definitions for any special tokens that we place in
     // our SQL query.  In this case, we are defining a value for the token
@@ -81,7 +81,7 @@
 
     // Now we perform the same type of check for the email address, in order
     // to ensure that it is unique.
-    $query = "SELECT 1 FROM users WHERE email = :email";
+    $query = "SELECT 1 FROM equ_users WHERE email = :email";
 
     $query_params = array( ':email' => $_POST['email']);
 
@@ -105,7 +105,7 @@
     // An INSERT query is used to add new rows to a database table.
     // Again, we are using special tokens (technically called parameters) to
     // protect against SQL injection attacks.
-    $query = "INSERT INTO users (username, password, salt, email) VALUES (:username, :password, :salt, :email)";
+    $query = "INSERT INTO equ_users (username, password, salt, email) VALUES (:username, :password, :salt, :email)";
 
     // A salt is randomly generated here to protect again brute force attacks
     // and rainbow table attacks.  The following statement generates a hex

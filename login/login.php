@@ -15,7 +15,7 @@
   {
     // This query retreives the user's information from the database using
     // their username.
-    $query = " SELECT id, username, password, salt, email, auth_level FROM users WHERE username = :username";
+    $query = " SELECT id, username, password, salt, email, authLevel FROM equ_users WHERE username = :username";
 
     // The parameter values
     $query_params = array(':username' => $_POST['username']);
@@ -76,6 +76,7 @@
       // or not the user is logged in.  We can also use it to retrieve
       // the user's details.
       $_SESSION['equatulatorUser'] = $row;
+	    $_SESSION["authLevel"] = $row['authLevel'];
 
       // Redirect the user to the index page.
       header("Location: ./../index.php");

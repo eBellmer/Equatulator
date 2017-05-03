@@ -31,7 +31,7 @@
     if($_POST['email'] != $_SESSION['equatulatorUser']['email'])
     {
         // Define our SQL query
-        $query = "SELECT 1 FROM users WHERE email = :email ";
+        $query = "SELECT 1 FROM equ_users WHERE email = :email ";
 
         // Define our query parameter values
         $query_params = array(':email' => $_POST['email']);
@@ -89,7 +89,7 @@
     // Note how this is only first half of the necessary update query.  We will dynamically
     // construct the rest of it depending on whether or not the user is changing
     // their password.
-    $query = "UPDATE users SET email = :email";
+    $query = "UPDATE equ_users SET email = :email";
 
     // If the user is changing their password, then we extend the SQL query
     // to include the password and salt columns and parameter tokens too.

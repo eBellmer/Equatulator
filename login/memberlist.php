@@ -5,7 +5,7 @@
   require("common.php");
 
   // At the top of the page we check to see whether the user is logged in or not
-  if(empty($_SESSION['user']) || $_SESSION['user']['auth_level'] !== "admin")
+  if(empty($_SESSION['user']) && $_SESSION['user']['auth_level'] != "admin")
   {
     // If they are not, we redirect them to the login page.
     header("Location: login.php");
@@ -20,7 +20,7 @@
   // We can retrieve a list of members from the database using a SELECT query.
   // In this case we do not have a WHERE clause because we want to select all
   // of the rows from the database table.
-  $query = "SELECT id, username, email, auth_level FROM users";
+  $query = "SELECT id, username, email, authLevel FROM equ_users";
 
   try
   {
