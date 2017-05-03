@@ -7,11 +7,32 @@
 				<li class="sidebar-brand"><a href="<?= ROOT_DIR;?>">Equatulator.me</a></li>
 				<li><a href="<?= ROOT_DIR;?>">Home</a></li>
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<span class="caret"></span></a>
+					<?php
+						if (empty($_SESSION['equatulatorUser']))
+						{
+							echo ('<a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<span class="caret"></span></a> ');
+						}
+						else
+						{
+							echo (' <a href="#" class="dropdown-toggle" data-toggle="dropdown">' . $_SESSION['equatulatorUser']['username'] . '<span class="caret"></span></a> ');
+						}
+					?>
 					<ul class="dropdown-menu" role="menu">
-						<li class="dropdown-header">Logged Out.</li>
-						<li><a href="<?= ROOT_DIR;?>login/login.php">Login</a></li>
-						<li><a href="<?= ROOT_DIR;?>login/register.php">Register</a></li>
+						<?php
+							if (empty($_SESSION['equatulatorUser']))
+							{
+								echo (' <li class="dropdown-header">Logged Out.</li>
+								<li><a href="' . ROOT_DIR . 'login/login.php">Login</a></li>
+								<li><a href="' . ROOT_DIR . 'login/register.php">Register</a></li> ');
+							}
+							else
+							{
+								echo (' <li class="dropdown-header">Hello ' . $_SESSION['equatulatorUser']['username'] . '</li>
+								<li><a href="' . ROOT_DIR . 'login/edit_account.php">Account</a></li>
+								<li><a href="' . ROOT_DIR . 'login/logout.php">Logout</a></li> ');
+							}
+
+						?>
 					</ul>
 				</li>
 				<li class="dropdown">
@@ -40,6 +61,7 @@
 						<li><a href="<?= ROOT_DIR;?>about/aboutAccounts.php">About Accounts</a></li>
 						<li><a href="<?= ROOT_DIR;?>about/aboutSecurity.php">About Security</a></li>
 						<li><a href="<?= ROOT_DIR;?>about/faq.php">FAQ</a></li>
+						<li><a href="<?= ROOT_DIR;?>about/contact.php">Contact</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -68,7 +90,7 @@
 
     function hamburger_cross() {
 
-      if (isClosed == true) {          
+      if (isClosed === true) {
         trigger.removeClass('is-open');
         trigger.addClass('is-closed');
         isClosed = false;
