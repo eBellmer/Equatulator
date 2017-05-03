@@ -32,7 +32,7 @@ define("ROOT_DIR", "./../")
 					<!-- <div class="contact-section">
 						<div class="container"> //-->
 							<h2>Contact Us</h2>
-							<p>Feel free to shout us by feeling the contact form or visiting our social network sites like Fackebook,Whatsapp,Twitter.</p>
+							<p>Feel free to shout us by feeling the contact form or visiting our social network sites.</p>
 							<div class="row">
 								<div class="col-md-8 col-md-offset-2">
 									<form class="form-horizontal" action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST">
