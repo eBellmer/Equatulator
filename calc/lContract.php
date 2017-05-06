@@ -1,6 +1,22 @@
 <?php 
 session_start();
 define("ROOT_DIR", "./../");
+
+require (ROOT_DIR . "scripts/php/mySQLiCon.php");
+
+$equationName = "Lorentz Contraction";
+
+if (!empty($_POST))
+{
+	$input = $_POST['aLength'] . " " . $_POST['rVelocity'];
+	$output = "";
+	$userID = $_SESSION['equatulatorUser'];
+
+	$sql = "INSERT INTO history (Equation, Inputs, Outputs, userID) VALUES('$equationName', '$input', '$output', '$userID')";
+
+	$result1 = mysqli_query($con, $sql);
+	mysqli_close($con);
+}
 ?>
 
 <!DOCTYPE html>
@@ -31,7 +47,7 @@ define("ROOT_DIR", "./../");
 					<div class="container-fluid">
 						<div class="row row-heading">
 							<div class="col-md-12">
-								<h2>Lorentz Contraction</h2>
+								<h2><?=$equationName?></h2>
 							</div>
 						</div>
 						<div class="row row-equation">	
@@ -40,31 +56,33 @@ define("ROOT_DIR", "./../");
 								$$ L = {L_0 \sqrt{1- {v^2 \over c^2}}} $$
 							</div>
 						</div>
-						<div class="row row-inputs">
-							<form id="lCont">
-								<div class="col-md-2">
-								</div>
-								<div class="col-md-4">
-									<input type="number" name="aLength" value="" id="aLength" class="form-control input-sm chat-input" placeholder="Actual Length (metres)"/>
-								</div>
-								<div class="col-md-4">
-									<input type="number" name="rVelocity" value="" id="rVelocity" class="form-control input-sm chat-input" placeholder="Relative Velocity (m/s)"/>
-								</div>
-								<div class="col-md-2">
-								</div>
-							</form>
-						</div>
-						<div class="row row-btn">
-							<div class="col-md-12">
-								<button type="button" class="btn btn-default" onclick="calculate()">Calculate</button>
+						<form name="equation" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+							<div class="row row-inputs">
+								<form id="lCont">
+									<div class="col-md-2">
+									</div>
+									<div class="col-md-4">
+										<input type="number" name="aLength" value="" id="aLength" class="form-control input-sm chat-input" placeholder="Actual Length (metres)"/>
+									</div>
+									<div class="col-md-4">
+										<input type="number" name="rVelocity" value="" id="rVelocity" class="form-control input-sm chat-input" placeholder="Relative Velocity (m/s)"/>
+									</div>
+									<div class="col-md-2">
+									</div>
+								</form>
 							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-                <p id="error-msg"></p>
-								<h4 id="resultHeader"></h4><p id="result"></p>
+							<div class="row row-btn">
+								<div class="col-md-12">
+									<button type="button" class="btn btn-default" onclick="calculate()">Calculate</button>
+								</div>
 							</div>
-						</div>
+							<div class="row">
+								<div class="col-md-12">
+	                <p id="error-msg"></p>
+									<h4 id="resultHeader"></h4><p id="result"></p>
+								</div>
+							</div>
+						</form>
 						<div class="row row-options">
 							<div class="col-md-3"></div>
 							<div class="col-md-3">
