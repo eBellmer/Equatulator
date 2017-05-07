@@ -14,7 +14,7 @@
 						}
 						else
 						{
-							echo (' <a href="#" class="dropdown-toggle" data-toggle="dropdown">' . $_SESSION['equatulatorUser']['username'] . '<span class="caret"></span></a> ');
+							echo (' <a href="#" class="dropdown-toggle" data-toggle="dropdown">' . htmlentities($_SESSION['equatulatorUser']['username'], ENT_QUOTES, 'UTF-8') . '<span class="caret"></span></a> ');
 						}
 					?>
 					<ul class="dropdown-menu" role="menu">
@@ -27,8 +27,8 @@
 							}
 							else
 							{
-								echo (' <li class="dropdown-header">Hello ' . $_SESSION['equatulatorUser']['username'] . '</li>
-								<li><a href="' . ROOT_DIR . 'login/edit_account.php">Account</a></li>
+								echo (' <li class="dropdown-header">Hello ' . htmlentities($_SESSION['equatulatorUser']['username'], ENT_QUOTES, 'UTF-8') . '</li>
+								<li><a href="' . ROOT_DIR . 'login/account.php">Account</a></li>
 								<li><a href="' . ROOT_DIR . 'login/logout.php">Logout</a></li> ');
 							}
 

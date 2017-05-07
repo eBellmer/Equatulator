@@ -45,7 +45,7 @@ define("ROOT_DIR", "./")
 									if (empty($_SESSION['equatulatorUser']))
 									{ echo (' <a href="' . ROOT_DIR . 'login/login.php"><h4>Login</h4></a> '); }
 									else
-									{ echo (' <a href="' . ROOT_DIR . 'login/edit_account.php"><h4>Account</h4></a> '); }
+									{ echo (' <a href="' . ROOT_DIR . 'login/account.php"><h4>Account</h4></a> '); }
 								?>
 							</div>
 							<div class="col-md-2">
