@@ -46,7 +46,7 @@
         {
           // Note: On a production website, you should not output $ex->getMessage().
           // It may provide an attacker with helpful information about your code.
-          die("Failed to run query: " . $ex->getMessage());
+          die("Failed to run query");
         }
 
         // Retrieve results (if any)
@@ -59,10 +59,10 @@
 
     // If the user entered a new password, we need to hash it and generate a fresh salt
     // for good measure.
-    if(!empty($_POST['password']))
+    if(!empty($_POST['pwd']))
     {
         $salt = dechex(mt_rand(0, 2147483647)) . dechex(mt_rand(0, 2147483647));
-        $password = openssl_digest($_POST['password'] . $salt, 'sha512');
+        $password = openssl_digest($_POST['pwd'] . $salt, 'sha512');
         for($round = 0; $round < 65536; $round++)
         {
           $password = openssl_digest($password . $salt, 'sha512');
@@ -112,7 +112,7 @@
     {
       // Note: On a production website, you should not output $ex->getMessage().
       // It may provide an attacker with helpful information about your code.
-      die("Failed to run query: " . $ex->getMessage());
+      die("Failed to run query: ");
     }
 
     // Now that the user's E-Mail address has changed, the data stored in the $_SESSION
@@ -144,37 +144,77 @@
 		<div class="middle">
 			<div class="inner-1">
 				<div class="container-fluid">
-
-
-					<div class = "panel pn-1 panel-default">
-						<div class = "panel-heading text-center">
-							<h4>Register</h4>
-						</div>
-						<div class="panel-body">
-							<div class="row">
-								<div class="col-md-3">
-									<form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST">
-										<div class="form-login">
-											<h4>Welcome back.</h4>
-											<input type="text" name="username" value="" id="username" class="form-control input-sm chat-input" placeholder="username"/>
-											</br>
-	                    <input type="text" name="email" value="" id="email" class="form-control input-sm chat-input" placeholder="email"/>
-	                    </br>
-											<input type="password" name="password" value="" id="password" class="form-control input-sm chat-input" placeholder="password"/>
-											</br>
-											<div class="wrapper">
-													<button type="submit" class="btn btn-primary btn-md" value="Register" name="submit"> register <i class="fa fa-sign-in"></i></button>
-											</div>
-										</div>
-									</form>
-								</div>
-							</div>
-						</div>
-						<div class = "panel-footer text-center">
-							<p>Hosted on The 3agle Network</p>
+					<div class="row">
+						<div class="col-md-12">
+							<?php
+							require (ROOT_DIR . "scripts/php/mySQLiCon.php");
+							$table = "history";
+							$sql = "SELECT * FROM " . $table . " WHERE userID ='" . $_SESSION['equatulatorUser']['id'] . "'";
+							echo '<h3>Saved Results</h3>';
+							$result1 = mysqli_query($con, $sql);
+							if($result1)
+							{
+							echo '
+							<div ID = history_table class="table-responsive scroll-table-container">
+								<table ID="tables" class="table scroll-table" cellpadding="10" cellspacing="10">';
+									$column = mysqli_query($con, "SHOW COLUMNS FROM $table");
+									echo '<tr>';
+										while($row3 = mysqli_fetch_array($column) )
+										{
+										echo '<th>'.$row3[0].'</th>';
+										}
+										echo '</tr>';
+									while($row2 = mysqli_fetch_row($result1) )
+									{
+									echo '<tr>';
+										foreach($row2 as $key=>$value)
+										{
+										echo '<td>',htmlentities($value, ENT_QUOTES, 'UTF-8'),'</td>';
+										}
+										echo '</tr>';
+									}
+									echo '</table><br /></div>';
+							}
+							mysqli_close($con);
+							?>
 						</div>
 					</div>
+				</div>
 
+
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12">Account Details</div>
+					</div>
+					<form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST">
+						<div class="form-account">
+							<div class="row">
+								<div class="col-md-2"></div>
+								<div class="col-md-4">
+									<input type="text" name="username" value="" max="30" id="username" class="form-control input-sm chat-input" placeholder="Username"/>
+								</div>
+								<div class="col-md-4">
+									<input type="email" name="email" value="" id="email" class="form-control input-sm chat-input" placeholder="Email Address"/>
+								</div>
+								<div class="col-md-2"></div>
+							</div>
+							<div class="row">
+								<div class="col-md-2"></div>
+								<div class="col-md-4">
+									<input type="password" name="pwd" value="" min="6" max="50" id="pwd" class="form-control input-sm chat-input" placeholder="Password"/>
+								</div>
+								<div class="col-md-4">
+									<input type="password" name="pwdConfirm" value="" min="6" max="50" id="pwdConfirm" class="form-control input-sm chat-input" placeholder="Confirm Password"/>
+								</div>
+								<div class="col-md-2"></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<button type="submit" class="btn btn-default" value="Register" name="submit">Save<i class="fa fa-sign-in"></i></button>
+							</div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
