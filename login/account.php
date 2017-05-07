@@ -149,31 +149,29 @@
 							<?php
 							require (ROOT_DIR . "scripts/php/mySQLiCon.php");
 							$table = "history";
-							$sql = "SELECT * FROM " . $table . " WHERE userID ='" . $_SESSION['equatulatorUser']['id'] . "'";
+							$sql = "SELECT Equation, Inputs, Outputs FROM " . $table . " WHERE userID ='" . $_SESSION['equatulatorUser']['id'] . "'";
 							echo '<h3>Saved Results</h3>';
 							$result1 = mysqli_query($con, $sql);
 							if($result1)
 							{
 							echo '
 							<div ID = history_table class="table-responsive scroll-table-container">
-								<table ID="tables" class="table scroll-table" cellpadding="10" cellspacing="10">';
-									$column = mysqli_query($con, "SHOW COLUMNS FROM $table");
-									echo '<tr>';
-										while($row3 = mysqli_fetch_array($column) )
-										{
-										echo '<th>'.$row3[0].'</th>';
-										}
-										echo '</tr>';
-									while($row2 = mysqli_fetch_row($result1) )
+								<table ID="tables" class="table scroll-table" cellpadding="10" cellspacing="10">
+								<tr>
+								<th>Equation</th>
+								<th>Inputs</th>
+								<th>Outputs</th>
+								</tr>';
+								while($row2 = mysqli_fetch_row($result1) )
+								{
+								echo '<tr>';
+									foreach($row2 as $key=>$value)
 									{
-									echo '<tr>';
-										foreach($row2 as $key=>$value)
-										{
-										echo '<td>',htmlentities($value, ENT_QUOTES, 'UTF-8'),'</td>';
-										}
-										echo '</tr>';
+									echo '<td>',htmlentities($value, ENT_QUOTES, 'UTF-8'),'</td>';
 									}
-									echo '</table><br /></div>';
+									echo '</tr>';
+								}
+								echo '</table><br /></div>';
 							}
 							mysqli_close($con);
 							?>
