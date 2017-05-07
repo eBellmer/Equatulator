@@ -4,11 +4,18 @@ define("ROOT_DIR", "./../");
 
 $equationName = "Lorentz Contraction";
 
+if (isset($_SESSION['equatulatorUser']))
+{
+	$usr = $_SESSION['equatulatorUser']['username'];
+}
+else
+{
+	$usr = "NULL";
+}
+
 if (isset($_POST['submit']) && isset($_SESSION['equatulatorUser']))
 {
   require (ROOT_DIR . "scripts/php/mySQLiCon.php");
-  echo ("Test Successful");
-  echo $_POST['outputs'];
 	$input = $_POST['aLength'] . ", " . $_POST['rVelocity'];
 	$output = $_POST['outputs'];
 	$userID = $_SESSION['equatulatorUser']['id'];
@@ -18,10 +25,6 @@ if (isset($_POST['submit']) && isset($_SESSION['equatulatorUser']))
 	$result1 = mysqli_query($con, $sql);
 	mysqli_close($con);
 	unset($_POST['submit']);
-}
-else
-{
-  echo ("Test Fail");
 }
 ?>
 
@@ -41,6 +44,11 @@ else
 		<script src="<?php echo ROOT_DIR;?>scripts/js/lCont.js"></script>
 		<!-- Page Stylesheet //-->
 		<link rel="stylesheet" href="<?= ROOT_DIR;?>scripts/css/style.css">
+
+		<script type="text/javascript">
+			var usr = "<?php echo $usr ?>";
+		</script>
+
 
 		<title>Lorentz Contraction | Equatulator</title>
 	</head>
@@ -79,9 +87,9 @@ else
 								<!--</form>//-->
 							</div>
 							<div class="row row-btn">
-								<div class="col-md-12">
+								<div class="col-md-12" id="btns">
 									<button type="button" class="btn btn-default" onclick="calculate()">Calculate</button>
-                  <input class="btn btn-default" type="submit" name="submit" value="Save Result" />
+                  <!--<input class="btn btn-default" type="submit" name="submit" value="Save Result" /> //-->
 								</div>
 							</div>
 							<div class="row">
