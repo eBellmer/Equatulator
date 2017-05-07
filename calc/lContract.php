@@ -2,20 +2,26 @@
 session_start();
 define("ROOT_DIR", "./../");
 
-require (ROOT_DIR . "scripts/php/mySQLiCon.php");
-
 $equationName = "Lorentz Contraction";
 
-if (!empty($_POST))
+if (isset($_POST['submit']) && isset($_SESSION['equatulatorUser']))
 {
-	$input = $_POST['aLength'] . " " . $_POST['rVelocity'];
-	$output = "";
-	$userID = $_SESSION['equatulatorUser'];
+  require (ROOT_DIR . "scripts/php/mySQLiCon.php");
+  echo ("Test Successful");
+  echo $_POST['outputs'];
+	$input = $_POST['aLength'] . ", " . $_POST['rVelocity'];
+	$output = $_POST['outputs'];
+	$userID = $_SESSION['equatulatorUser']['id'];
 
 	$sql = "INSERT INTO history (Equation, Inputs, Outputs, userID) VALUES('$equationName', '$input', '$output', '$userID')";
 
 	$result1 = mysqli_query($con, $sql);
 	mysqli_close($con);
+	unset($_POST['submit']);
+}
+else
+{
+  echo ("Test Fail");
 }
 ?>
 
@@ -56,9 +62,10 @@ if (!empty($_POST))
 								$$ L = {L_0 \sqrt{1- {v^2 \over c^2}}} $$
 							</div>
 						</div>
-						<form name="equation" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-							<div class="row row-inputs">
-								<form id="lCont">
+						<form name="equation" id="equation" method="POST" action="<?php echo $_SERVER['PHP_SELF'] ?>" onsubmit=" return process();">
+              <input type="hidden" id="hidden" name="outputs" value="" />
+              <div class="row row-inputs">
+								<!--<form id="lCont">//-->
 									<div class="col-md-2">
 									</div>
 									<div class="col-md-4">
@@ -69,11 +76,12 @@ if (!empty($_POST))
 									</div>
 									<div class="col-md-2">
 									</div>
-								</form>
+								<!--</form>//-->
 							</div>
 							<div class="row row-btn">
 								<div class="col-md-12">
 									<button type="button" class="btn btn-default" onclick="calculate()">Calculate</button>
+                  <input class="btn btn-default" type="submit" name="submit" value="Save Result" />
 								</div>
 							</div>
 							<div class="row">

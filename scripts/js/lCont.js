@@ -36,3 +36,9 @@ function calculate()
     document.getElementById("error-msg").innerHTML = "Invalid Input! v";
   }
 }
+
+function process()
+{
+  document.getElementById("hidden").value = document.getElementById("result").innerHTML;
+  return true;
+}
