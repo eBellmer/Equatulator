@@ -49,7 +49,6 @@ if (isset($_POST['submit']) && isset($_SESSION['equatulatorUser']))
 			var usr = "<?php echo $usr ?>";
 		</script>
 
-
 		<title>Lorentz Contraction | Equatulator</title>
 	</head>
 	<body>
@@ -89,7 +88,6 @@ if (isset($_POST['submit']) && isset($_SESSION['equatulatorUser']))
 							<div class="row row-btn">
 								<div class="col-md-12" id="btns">
 									<button type="button" class="btn btn-default" onclick="calculate()">Calculate</button>
-                  <!--<input class="btn btn-default" type="submit" name="submit" value="Save Result" /> //-->
 								</div>
 							</div>
 							<div class="row">
