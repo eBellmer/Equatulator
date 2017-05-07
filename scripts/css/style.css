@@ -152,6 +152,10 @@ body
 {
 	text-align: left;
 }
+th
+{
+	text-align: center;
+}
 .panel, .panel-heading, .panel-footer
 {
 	background-color: inherit;
