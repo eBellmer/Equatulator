@@ -72,18 +72,16 @@ if (isset($_POST['submit']) && isset($_SESSION['equatulatorUser']))
 						<form name="equation" id="equation" method="POST" action="<?php echo $_SERVER['PHP_SELF'] ?>" onsubmit=" return process();">
               <input type="hidden" id="hidden" name="outputs" value="" />
               <div class="row row-inputs">
-								<!--<form id="lCont">//-->
-									<div class="col-md-2">
-									</div>
-									<div class="col-md-4">
-										<input type="number" name="aLength" value="" id="aLength" class="form-control input-sm chat-input" placeholder="Actual Length (metres)"/>
-									</div>
-									<div class="col-md-4">
-										<input type="number" name="rVelocity" value="" id="rVelocity" class="form-control input-sm chat-input" placeholder="Relative Velocity (m/s)"/>
-									</div>
-									<div class="col-md-2">
-									</div>
-								<!--</form>//-->
+								<div class="col-md-2">
+								</div>
+								<div class="col-md-4">
+									<input type="number" name="aLength" value="" id="aLength" class="form-control input-sm chat-input" placeholder="Actual Length (metres)"/>
+								</div>
+								<div class="col-md-4">
+									<input type="number" name="rVelocity" value="" id="rVelocity" class="form-control input-sm chat-input" placeholder="Relative Velocity (m/s)"/>
+								</div>
+								<div class="col-md-2">
+								</div>
 							</div>
 							<div class="row row-btn">
 								<div class="col-md-12" id="btns">
