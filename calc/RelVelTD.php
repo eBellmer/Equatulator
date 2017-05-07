@@ -1,6 +1,31 @@
 <?php 
 session_start();
-define("ROOT_DIR", "./../") 
+define("ROOT_DIR", "./../");
+
+$equationName = "Relative Velocity Time Dilation";
+
+if (isset($_SESSION['equatulatorUser']))
+{
+	$usr = $_SESSION['equatulatorUser']['username'];
+}
+else
+{
+	$usr = "NULL";
+}
+
+if (isset($_POST['submit']) && isset($_SESSION['equatulatorUser']))
+{
+	require (ROOT_DIR . "scripts/php/mySQLiCon.php");
+	$input = $_POST['rVelocity'] . ", " . $_POST['aTime'];
+	$output = $_POST['outputs'];
+	$userID = $_SESSION['equatulatorUser']['id'];
+
+	$sql = "INSERT INTO history (Equation, Inputs, Outputs, userID) VALUES('$equationName', '$input', '$output', '$userID')";
+
+	$result1 = mysqli_query($con, $sql);
+	mysqli_close($con);
+	unset($_POST['submit']);
+}
 ?>
 
 <!DOCTYPE html>
@@ -20,6 +45,10 @@ define("ROOT_DIR", "./../")
 		<!-- Page Stylesheet //-->
 		<link rel="stylesheet" href="<?= ROOT_DIR;?>scripts/css/style.css">
 
+		<script type="text/javascript">
+			var usr = "<?php echo $usr ?>";
+		</script>
+
 		<title>Relative Velocity Time Dilation | Equatulator</title>
 	</head>
 	<body>
@@ -32,7 +61,7 @@ define("ROOT_DIR", "./../")
 					<div class="container-fluid">
 						<div class="row row-heading">
 							<div class="col-md-12">
-								<h2>Relative Velocity Time Dilation</h2>
+								<h2><?=$equationName?></h2>
 							</div>
 						</div>
 						<div class="row row-equation">	
@@ -41,29 +70,32 @@ define("ROOT_DIR", "./../")
 									$$ \Delta t' = {\Delta t \over \sqrt{1 - {v^2 \over c^2}}} $$
 							</div>
 						</div>
-						<div class="row">	
-							<div class="col-md-2">
+						<form name="equation" id="equation" method="POST" action="<?php echo $_SERVER['PHP_SELF'] ?>" onsubmit=" return process();">
+							<input type="hidden" id="hidden" name="outputs" value="" />
+							<div class="row row-inputs">
+								<div class="col-md-2">
+								</div>
+								<div class="col-md-4">
+									<input type="text" name="rVelocity" value="" id="rVelocity" class="form-control input-sm chat-input" placeholder="Relative Velocity (m/s)"/>
+								</div>
+								<div class="col-md-4">
+									<input type="text" name="aTime" value="" id="aTime" class="form-control input-sm chat-input" placeholder="Time Interval (seconds)"/>
+								</div>
+								<div class="col-md-2">
+								</div>
 							</div>
-							<div class="col-md-4">
-								<input type="text" name="rVelocity" value="" id="rVelocity" class="form-control input-sm chat-input" placeholder="Relative Velocity (m/s)"/>
+							<div class="row">
+								<div class="col-md-12" id="btns">
+									<button type="button" class="btn btn-default" onclick="calculate()">Calculate</button>
+								</div>
 							</div>
-							<div class="col-md-4">
-								<input type="text" name="aTime" value="" id="aTime" class="form-control input-sm chat-input" placeholder="Time Interval (seconds)"/>
+							<div class="row">
+								<div class="col-md-12">
+									<p id="error-msg"></p>
+									<h4 id="resultHeader"></h4><p id="result"></p>
+								</div>
 							</div>
-							<div class="col-md-2">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<button type="button" class="btn btn-default" onclick="calculate()">Calculate</button>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<p id="error-msg"></p>
-								<h4 id="resultHeader"></h4><p id="result"></p>
-							</div>
-						</div>
+						</form>
 						<div class="row row-options">
 							<div class="col-md-3"></div>
 							<div class="col-md-3">

@@ -7,7 +7,32 @@
  */
 
 session_start();
-define("ROOT_DIR", "./../")
+define("ROOT_DIR", "./../");
+
+$equationName = "Mass-Energy";
+
+if (isset($_SESSION['equatulatorUser']))
+{
+	$usr = $_SESSION['equatulatorUser']['username'];
+}
+else
+{
+	$usr = "NULL";
+}
+
+if (isset($_POST['submit']) && isset($_SESSION['equatulatorUser']))
+{
+	require (ROOT_DIR . "scripts/php/mySQLiCon.php");
+	$input = $_POST['rMass'] . ", " . $_POST['rVelocity'];
+	$output = $_POST['outputs'];
+	$userID = $_SESSION['equatulatorUser']['id'];
+
+	$sql = "INSERT INTO history (Equation, Inputs, Outputs, userID) VALUES('$equationName', '$input', '$output', '$userID')";
+
+	$result1 = mysqli_query($con, $sql);
+	mysqli_close($con);
+	unset($_POST['submit']);
+}
 ?>
 
 <!DOCTYPE html>
@@ -28,6 +53,10 @@ define("ROOT_DIR", "./../")
 	<!-- Page Stylesheet //-->
 	<link rel="stylesheet" href="<?= ROOT_DIR;?>scripts/css/style.css">
 
+	<script type="text/javascript">
+		var usr = "<?php echo $usr ?>";
+	</script>
+
 	<title>Mass-Energy | Equatulator</title>
 </head>
 <body>
@@ -39,7 +68,7 @@ define("ROOT_DIR", "./../")
 			<div class="container-fluid">
 				<div class="row row-heading">
 					<div class="col-md-12">
-						<h2>Mass-Energy</h2>
+						<h2><?=$equationName?></h2>
 					</div>
 				</div>
 				<div class="row row-equation">
@@ -49,8 +78,9 @@ define("ROOT_DIR", "./../")
 						$$ E0 = {E \over \sqrt{1 - {v^2 \over c^2}}} = {m c^2 \over \sqrt{1 - {v^2 \over c^2}}} $$
 					</div>
 				</div>
-				<div class="row row-inputs">
-					<form id="lCont">
+				<form name="equation" id="equation" method="POST" action="<?php echo $_SERVER['PHP_SELF'] ?>" onsubmit=" return process();">
+					<input type="hidden" id="hidden" name="outputs" value="" />
+					<div class="row row-inputs">
 						<div class="col-md-2">
 						</div>
 						<div class="col-md-4">
@@ -61,19 +91,19 @@ define("ROOT_DIR", "./../")
 						</div>
 						<div class="col-md-2">
 						</div>
-					</form>
-				</div>
-				<div class="row row-btn">
-					<div class="col-md-12">
-						<button type="button" class="btn btn-default" onclick="calculate()">Calculate</button>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<p id="error-msg"></p>
-						<h4 id="resultHeader"></h4><p id="result"></p>
+					<div class="row row-btn">
+						<div class="col-md-12" id="btns">
+							<button type="button" class="btn btn-default" onclick="calculate()">Calculate</button>
+						</div>
 					</div>
-				</div>
+					<div class="row">
+						<div class="col-md-12">
+							<p id="error-msg"></p>
+							<h4 id="resultHeader"></h4><p id="result"></p>
+						</div>
+					</div>
+				</form>
 				<div class="row row-options">
 					<div class="col-md-3"></div>
 					<div class="col-md-3">

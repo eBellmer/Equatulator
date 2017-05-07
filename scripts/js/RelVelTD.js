@@ -18,7 +18,14 @@ function calculate()
     var dta = math.divide(dt, vc);
 
 	  document.getElementById("resultHeader").innerHTML = "Results:";
-    document.getElementById("result").innerHTML = dta + "" + units;
+    document.getElementById("result").innerHTML =
+	    "Adjusted Time Interval: " + dta + "" + units;
+
+	  if (usr !== "NULL")
+	  {
+		  document.getElementById('btns').innerHTML = '<button type="button" class="btn btn-default" onclick="calculate()">Calculate</button> ' +
+			  '<input class="btn btn-default" type="submit" name="submit" value="Save Result" />';
+	  }
   }
   else if(v <= 0 || v > c)
   {
@@ -32,5 +39,11 @@ function calculate()
   {
 		document.getElementById("error-msg").innerHTML = "Invalid Input! DT";
   }
+}
 
+function process()
+{
+	document.getElementById("hidden").value = document.getElementById("result").innerHTML;
+
+	return true;
 }

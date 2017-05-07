@@ -30,6 +30,12 @@ function calculate()
 		document.getElementById("resultHeader").innerHTML = "Results:";
 		document.getElementById("result").innerHTML =
 			"At Observer:" + "<br>" + "Frequency of Sound : " +  f + "" + freqUnit + "<br>";
+
+		if (usr !== "NULL")
+		{
+			document.getElementById('btns').innerHTML = '<button type="button" class="btn btn-default" onclick="calculate()">Calculate</button> ' +
+				'<input class="btn btn-default" type="submit" name="submit" value="Save Result" />';
+		}
 	}
 
 	else if(t === "NaN")
@@ -60,4 +66,11 @@ function calculate()
 	{
 		document.getElementById("error-msg").innerHTML = "Invalid Input! F0";
 	}
+}
+
+function process()
+{
+	document.getElementById("hidden").value = document.getElementById("result").innerHTML;
+
+	return true;
 }

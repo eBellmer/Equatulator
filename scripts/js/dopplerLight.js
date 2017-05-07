@@ -51,17 +51,11 @@ function calculate()
 			"Frequency of light : " +  freq + "" + freqUnit + "<br>" +
 			"Velocity ratio to light v/c: " + vc1 + percentUnits;
 
-
-		/* $(document).ready(function(){
-			$(".btn-calculate").click(function(){
-				$("#results").slideToggle("slow");
-				$(this).toggleClass("active");
-				return false;
-			});
-
-			$(".btn-calculate").trigger('click');
-		}); */
-
+		if (usr !== "NULL")
+		{
+			document.getElementById('btns').innerHTML = '<button type="button" class="btn btn-default" onclick="calculate()">Calculate</button> ' +
+				'<input class="btn btn-default" type="submit" name="submit" value="Save Result" />';
+		}
 	}
 	else if(l0 <= 0)
 	{
@@ -79,4 +73,11 @@ function calculate()
 	{
 		document.getElementById("error-msg").innerHTML = "Invalid Input! v";
 	}
+}
+
+function process()
+{
+	document.getElementById("hidden").value = document.getElementById("result").innerHTML;
+
+	return true;
 }

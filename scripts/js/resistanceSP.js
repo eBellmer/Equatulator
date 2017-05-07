@@ -23,6 +23,11 @@ function calculate()
 			"Series Resistance: " +  Rs + "" + units + "<br>" +
 			"Parallel Resistance: " + Rp + "" + units;
 
+		if (usr !== "NULL")
+		{
+			document.getElementById('btns').innerHTML = '<button type="button" class="btn btn-default" onclick="calculate()">Calculate</button> ' +
+				'<input class="btn btn-default" type="submit" name="submit" value="Save Result" />';
+		}
 	}
 	else if(r1 <= 0)
 	{
@@ -36,4 +41,11 @@ function calculate()
 	{
 		document.getElementById("error-msg").innerHTML = "Invalid Input! R2";
 	}
+}
+
+function process()
+{
+	document.getElementById("hidden").value = document.getElementById("result").innerHTML;
+
+	return true;
 }

@@ -22,6 +22,12 @@ function calculate()
 		document.getElementById("result").innerHTML =
 			"Series Capacitance: " +  Cs + "" + units + "<br>" +
 			"Parallel Capacitance: " + Cp + "" + units;
+
+		if (usr !== "NULL")
+		{
+			document.getElementById('btns').innerHTML = '<button type="button" class="btn btn-default" onclick="calculate()">Calculate</button> ' +
+				'<input class="btn btn-default" type="submit" name="submit" value="Save Result" />';
+		}
 	}
 	else if(c1 <= 0)
 	{
@@ -35,4 +41,11 @@ function calculate()
 	{
 		document.getElementById("error-msg").innerHTML = "Invalid Input! C2";
 	}
+}
+
+function process()
+{
+	document.getElementById("hidden").value = document.getElementById("result").innerHTML;
+
+	return true;
 }
