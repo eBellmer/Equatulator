@@ -27,12 +27,13 @@ define("ROOT_DIR", "./")
 					<div class="container-fluid" id="home">
 						<div class="row row-heading">
 							<div class="col-md-12">
-								<h2>Equatulator.me</h2>
+								<h2>Equatulator.me (Beta)</h2>
 							</div>
 						</div>
 						<div class="row row-subtitle">
 							<div class="col-md-12">
-								<p>The Bootstrap/JS Equation Calculator</p>
+								<p>The Bootstrap/JS Equation Calculator</p> <br>
+								<p>Please note some calculations are not yet functional</p>
 							</div>
 						</div>
 						<div class="row">
